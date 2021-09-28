@@ -1,12 +1,13 @@
 const config =  require('./config.js');
+const morgan = require('morgan');
+const logger = require('./logger/logger');
 const express = require('express');
 const cors = require('cors');
 const fs = require("mz/fs");
 const https = require('https');
 //const csrf = require('csurf');
 
-console.log(`NODE_ENV=${config.NODE_ENV}`);
-console.log(`HTTPS=${config.HTTPS}`)
+
 
 const app = express();
 
@@ -33,11 +34,28 @@ app.use("/geospatial",geospatial);
 //app.use("/upload",upload);
 app.use("/usermanagement",usermanagement);
 
+logger.log(
+    {
+        message:`NODE_ENV=${config.NODE_ENV}`,
+        level:'info'
+    }
+)
 
+logger.log(
+    {
+        message:`HTTPS=${config.HTTPS}`,
+        level:'info'
+    }
+)
 
 if(config.HTTPS === "false"){
     app.listen(config.PORT, config.HOST, () => {
-        console.log(`APP LISTENING ON http://${config.HOST}:${config.PORT}`);
+        logger.log(
+            {
+                message:`APP LISTENING ON http://${config.HOST}:${config.PORT}`,
+                level:'info'
+            }
+        );
     })
 }else if(config.HTTPS === "true"){
     const privateKey = fs.readFileSync(`/etc/letsencrypt/live/${config.HOST}/privkey.pem`, 'utf8');
@@ -50,7 +68,11 @@ if(config.HTTPS === "false"){
             cert:certificate,
             ca:ca
 
-        }, app).listen(config.PORT, config.HOST,()=>console.log(`APP LISTENING ON https://${config.HOST}:${config.PORT}`))
+        }, app).listen(config.PORT, config.HOST,()=>logger.log(
+        {
+                message:`APP LISTENING ON https://${config.HOST}:${config.PORT}`,
+                level:'info'
+            }))
 }
 
 

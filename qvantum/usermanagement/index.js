@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
-
+const logger = require("./logger/logger");
 
 const fetchUser = async(data)=>{
     let config = {
@@ -14,6 +14,18 @@ const fetchUser = async(data)=>{
             return response.data;
         })
         .catch(function (error) {
+            logger.log(
+                {
+                    message:error,
+                    level:'error'
+                }
+            )
+            logger.log(
+                {
+                    message:config,
+                    level:'error'
+                }
+            )
             return error;
         });
 }
