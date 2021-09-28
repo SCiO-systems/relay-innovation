@@ -9,5 +9,6 @@ module.exports = {
     NODE_ENV : process.env.NODE_ENV || 'development',
     HOST : process.env.HOST || 'localhost',
     PORT : process.env.PORT || 5000,
-    HTTPS : process.env.HTTPS || false
+    HTTPS : process.env.HTTPS || false,
+    APP : process.env.APP || "NO APP"
 }

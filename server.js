@@ -1,13 +1,11 @@
 const config =  require('./config.js');
-const morgan = require('morgan');
-const logger = require('./logger/logger');
+const Logger = require('./logger/logger');
+const morganMiddleware = require('./logger/httplogger');
 const express = require('express');
 const cors = require('cors');
 const fs = require("mz/fs");
 const https = require('https');
 //const csrf = require('csurf');
-
-
 
 const app = express();
 
@@ -15,12 +13,13 @@ const autocomplete = require("./qvantum/autocomplete");
 const wocat = require("./qvantum/wocat");
 const geospatial = require("./qvantum/geospatial");
 const usermanagement = require("./qvantum/usermanagement");
+const rtb = require("./qvantum/rtb");
 /*const csrfProtection = csrf({
     cookie: true
 });*/
 
 //app.use(csrfProtection);
-
+app.use(morganMiddleware);
 app.use(express.json());
 app.use(cors());
 app.use('/temp',express.static('../temp'))
@@ -33,15 +32,16 @@ app.use("/wocat",wocat);
 app.use("/geospatial",geospatial);
 //app.use("/upload",upload);
 app.use("/usermanagement",usermanagement);
+app.use("/rtb",rtb);
 
-logger.log(
+Logger.log(
     {
         message:`NODE_ENV=${config.NODE_ENV}`,
         level:'info'
     }
 )
 
-logger.log(
+Logger.log(
     {
         message:`HTTPS=${config.HTTPS}`,
         level:'info'
@@ -50,12 +50,7 @@ logger.log(
 
 if(config.HTTPS === "false"){
     app.listen(config.PORT, config.HOST, () => {
-        logger.log(
-            {
-                message:`APP LISTENING ON http://${config.HOST}:${config.PORT}`,
-                level:'info'
-            }
-        );
+        Logger.info(`Server is up and running @ http://${config.HOST}:${config.PORT}`);
     })
 }else if(config.HTTPS === "true"){
     const privateKey = fs.readFileSync(`/etc/letsencrypt/live/${config.HOST}/privkey.pem`, 'utf8');
@@ -68,11 +63,8 @@ if(config.HTTPS === "false"){
             cert:certificate,
             ca:ca
 
-        }, app).listen(config.PORT, config.HOST,()=>logger.log(
-        {
-                message:`APP LISTENING ON https://${config.HOST}:${config.PORT}`,
-                level:'info'
-            }))
+        }, app).listen(config.PORT, config.HOST,
+        ()=>Logger.info(`Server is up and running @ http://${config.HOST}:${config.PORT}`))
 }
 
 
