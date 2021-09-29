@@ -5,7 +5,6 @@ const express = require('express');
 const cors = require('cors');
 const fs = require("mz/fs");
 const https = require('https');
-//const csrf = require('csurf');
 
 const app = express();
 
@@ -13,12 +12,8 @@ const autocomplete = require("./qvantum/autocomplete");
 const wocat = require("./qvantum/wocat");
 const geospatial = require("./qvantum/geospatial");
 const usermanagement = require("./qvantum/usermanagement");
-const rtb = require("./qvantum/rtb");
-/*const csrfProtection = csrf({
-    cookie: true
-});*/
+const innovation = require("./qvantum/innovation");
 
-//app.use(csrfProtection);
 app.use(morganMiddleware);
 app.use(express.json());
 app.use(cors());
@@ -27,12 +22,18 @@ app.use('/temp',express.static('../temp'))
 
 //test route
 app.get("/",(req,res)=>res.json({success:"HI"}));
+
+//Qvantum Autocompete Service
 app.use("/autocomplete",autocomplete);
+//Qvantum WOCAT Service
 app.use("/wocat",wocat);
+//Qvantum Geospatial Service
 app.use("/geospatial",geospatial);
 //app.use("/upload",upload);
+//Qvantum Innovation Service
+app.use("/innovation",innovation);
+//Project Specific
 app.use("/usermanagement",usermanagement);
-app.use("/rtb",rtb);
 
 Logger.log(
     {

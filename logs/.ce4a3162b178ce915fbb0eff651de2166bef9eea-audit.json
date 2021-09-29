@@ -29,6 +29,21 @@
             "date": 1632844801002,
             "name": "logs\\application-2021-09-28-19.log",
             "hash": "7660129a9b0eb3adeb2b02636fc740ad"
+        },
+        {
+            "date": 1632903711218,
+            "name": "logs\\application-2021-09-29-11.log",
+            "hash": "3231f9309b8aef1a40ab25bff7344368"
+        },
+        {
+            "date": 1632906091354,
+            "name": "logs\\application-2021-09-29-12.log",
+            "hash": "af48f114071ed107b199d780737e1138"
+        },
+        {
+            "date": 1632923339152,
+            "name": "logs\\application-2021-09-29-16.log",
+            "hash": "9c57ec83f9e965762971584fc1b194f7"
         }
     ]
 }

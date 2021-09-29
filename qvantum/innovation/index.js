@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 const Logger = require("../../logger/logger");
-//const config = require("../../config");
 
 const generateToken = async()=>{
 
@@ -11,8 +10,6 @@ const generateToken = async()=>{
         url: process.env.AGRONOMY_API + '/api/generatetoken',
         headers: {}
     };
-
-    Logger.info("Request: "+config);
 
     return axios(config)
         .then(function (response) {
@@ -38,7 +35,6 @@ const fetchRTBResults = async(data,access_token)=>{
 
     return axios(config)
         .then(function (response) {
-            Logger.debug("RTB Response: "+JSON.stringify(response.data));
             return response.data;
         })
         .catch(function (error) {
@@ -50,9 +46,10 @@ const fetchRTBResults = async(data,access_token)=>{
 }
 
 router.post("/search",async(req,res)=>{
+    Logger.info("Search Innovation Catalogue: "+JSON.stringify(req.body));
     const token = await generateToken();
     const query = req.body;
-    const data = await fetchRTBResults(query,token.access_token);
+    const data = await fetchRTBResults(query,token.response.access_token);
     res.json(data);
 })
 
