@@ -7,7 +7,7 @@ const generateToken = async()=>{
 
     let config = {
         method: 'get',
-        url: process.env.AGRONOMY_API + '/api/generatetoken',
+        url: 'https://gardian.api.dev2.scio.services/api/generatetoken',
         headers: {}
     };
 
@@ -22,16 +22,20 @@ const generateToken = async()=>{
 
 }
 
-const fetchRTBResults = async(data,access_token)=>{
-    let dataRequest = JSON.stringify(data);
+
+const getAnalytics = async(access_token)=>{
+    let data = JSON.stringify({
+        "key": "gardian_summaries"
+    });
+
     let config = {
         method: 'post',
-        url: process.env.AGRONOMY_API + '/api/rtb-search',
+        url: 'https://gardian.api.dev2.scio.services/api/retrieveRedisValue',
         headers: {
             'Authorization': `Bearer ` + access_token,
             'Content-Type': 'application/json'
         },
-        data: dataRequest
+        data: data
     };
 
     return await axios(config)
@@ -46,17 +50,44 @@ const fetchRTBResults = async(data,access_token)=>{
 
 }
 
+const getGardianSummary =  async(access_token)=>{
 
-const fetchDocument = async(data,access_token)=>{
-    let dataRequest = JSON.stringify(data);
+    let data = JSON.stringify({
+        "key": "gardian_homepage"
+    });
+
     let config = {
         method: 'post',
-        url: process.env.AGRONOMY_API + '/api/retrievedocument',
+        url: 'https://gardian.api.dev2.scio.services/api/retrieveRedisValue',
         headers: {
             'Authorization': `Bearer ` + access_token,
             'Content-Type': 'application/json'
         },
-        data: dataRequest
+        data : data
+    };
+
+    return await axios(config)
+        .then(function (response) {
+            return response.data;
+        })
+        .catch(function (error) {
+            Logger.error(JSON.stringify(error.response.data));
+            Logger.error("AXIOS CONFIG: "+JSON.stringify(config));
+            return error;
+        });
+}
+
+const getMetadata = async(data,access_token)=>{
+    data.alias = "gardian_index";
+    let dataRequest = JSON.stringify(data);
+    let config = {
+        method: 'post',
+        url: 'https://gardian.api.dev2.scio.services/api/retrievedocument',
+        headers: {
+            'Authorization': `Bearer ` + access_token,
+            'Content-Type': 'application/json'
+        },
+        data : dataRequest
     };
 
     return await axios(config)
@@ -71,19 +102,19 @@ const fetchDocument = async(data,access_token)=>{
 
 }
 
-const fetchDocumentByTitle = async(data,access_token)=>{
+const getResults = async(data,access_token)=>{
     let dataRequest = JSON.stringify(data);
     let config = {
         method: 'post',
-        url: process.env.AGRONOMY_API + '/api/rtb-retrieveByTitle',
+        url: 'https://gardian.api.dev2.scio.services/api/querygardian',
         headers: {
             'Authorization': `Bearer ` + access_token,
             'Content-Type': 'application/json'
         },
-        data: dataRequest
+        data : dataRequest
     };
 
-    return axios(config)
+    return await axios(config)
         .then(function (response) {
             return response.data;
         })
@@ -95,12 +126,12 @@ const fetchDocumentByTitle = async(data,access_token)=>{
 
 }
 
+
 router.post("/search",async(req,res)=>{
-    Logger.info("Search Innovation Catalogue: "+JSON.stringify(req.body));
+    Logger.info("Search GARDIAN Catalogue: "+JSON.stringify(req.body));
     const token = await generateToken();
-    Logger.info("Search Innovation Catalogue: "+JSON.stringify(token));
     const query = req.body;
-    const data = await fetchRTBResults(query,token.access_token).then((res)=>{return res});
+    const data = await getResults(query,token.access_token).then((res)=>{return res});
     res.json(data);
 })
 
@@ -108,15 +139,21 @@ router.post("/document",async(req,res)=>{
     Logger.info("Get Document "+JSON.stringify(req.body));
     const token = await generateToken();
     const query = req.body;
-    const data = await fetchDocument(query,token.access_token);
+    const data = await getMetadata(query,token.access_token);
     res.json(data);
 })
 
-router.post("/documenttitle",async(req,res)=>{
-    Logger.info("Get Document by Title "+JSON.stringify(req.body));
+router.get("/summary",async(req,res)=>{
+    Logger.info("Get Summary "+JSON.stringify(req.body));
     const token = await generateToken();
-    const query = req.body;
-    const data = await fetchDocument(query,token.access_token);
+    const data = await getGardianSummary(token.access_token);
+    res.json(data);
+})
+
+router.get("/analytics",async(req,res)=>{
+    Logger.info("Get Analytics "+JSON.stringify(req.body));
+    const token = await generateToken();
+    const data = await getAnalytics(token.access_token);
     res.json(data);
 })
 

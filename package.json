@@ -25,6 +25,7 @@
     "csurf": "^1.11.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-openid-connect": "^2.5.1",
     "morgan": "^1.10.0",
     "mz": "^2.7.0",
     "winston": "^3.3.3",
