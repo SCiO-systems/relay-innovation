@@ -17,7 +17,7 @@ const multer = require('multer')
 // import fetch from 'node-fetch';
 // import multer from 'multer'
 
-const domainUrl = process.env.DOMAIN_URL
+const domainUrl = process.env.API_URL
 
 var csrfProtection = csrf({ cookie: true })
 
