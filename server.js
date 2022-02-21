@@ -79,6 +79,7 @@ Logger.log(
     }
 )
 
+console.log(`Server is up and running @ http://${process.env.IP}:${config.PORT}`)
 if(config.HTTPS === false){
     app.listen(config.PORT, process.env.IP, () => {
         Logger.info(`Server is up and running @ http://${process.env.IP}:${config.PORT}`);
