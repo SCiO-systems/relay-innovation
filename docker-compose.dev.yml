@@ -7,9 +7,9 @@ services:
     ports:
       - 50200:5000
     volumes:
-      - /etc/letsencrypt/live/${HOST}/privkey.pem:/etc/letsencrypt/live/${HOST}/privkey.pem
-      - /etc/letsencrypt/live/${HOST}/cert.pem:/etc/letsencrypt/live/${HOST}/cert.pem
-      - /etc/letsencrypt/live/${HOST}/chain.pem:/etc/letsencrypt/live/${HOST}/chain.pem
+      - /etc/letsencrypt/live/innovation.dev.api.scio.services/privkey.pem:/etc/letsencrypt/live/innovation.dev.api.scio.services/privkey.pem
+      - /etc/letsencrypt/live/innovation.dev.api.scio.services/cert.pem:/etc/letsencrypt/live/innovation.dev.api.scio.services/cert.pem
+      - /etc/letsencrypt/live/innovation.dev.api.scio.services/chain.pem:/etc/letsencrypt/live/innovation.dev.api.scio.services/chain.pem
     env_file:
       - .env
       
