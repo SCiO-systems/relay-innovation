@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   qvantum-relay:
-    image: sciohub/qvantum-relay:staging
+    image: sciohub/qvantum-relay:dev
     container_name: qvantum-relay
     restart: unless-stopped
     ports:
