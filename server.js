@@ -6,6 +6,7 @@ const cors = require('cors');
 const fs = require("mz/fs");
 const https = require('https');
 const auth = require('express-openid-connect');
+require('dotenv/config')
 
 /*const config = {
     authRequired: false,
@@ -25,10 +26,16 @@ const gardian = require("./qvantum/gardian");
 const geospatial = require("./qvantum/geospatial");
 const usermanagement = require("./qvantum/usermanagement");
 const innovation = require("./qvantum/innovation");
+const rtb = require('./qvantum/rtb-refactored')
+
+const corsOptions = {
+    origin: process.env.ALLOWED_ORIGIN,
+    credentials: true,
+}
 
 app.use(morganMiddleware);
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 app.use('/temp',express.static('../temp'))
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 //app.use(auth(config));
@@ -53,6 +60,8 @@ app.use("/geospatial",geospatial);
 //app.use("/upload",upload);
 //Qvantum Innovation Service
 app.use("/innovation",innovation);
+
+app.use("/rtb-refactored",rtb);
 //Project Specific
 app.use("/usermanagement",usermanagement);
 
