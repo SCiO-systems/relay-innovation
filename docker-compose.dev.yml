@@ -10,6 +10,3 @@ services:
       - /etc/letsencrypt/live/innovation.dev.api.scio.services/privkey.pem:/etc/letsencrypt/live/innovation.dev.api.scio.services/privkey.pem
       - /etc/letsencrypt/live/innovation.dev.api.scio.services/cert.pem:/etc/letsencrypt/live/innovation.dev.api.scio.services/cert.pem
       - /etc/letsencrypt/live/innovation.dev.api.scio.services/chain.pem:/etc/letsencrypt/live/innovation.dev.api.scio.services/chain.pem
-    env_file:
-      - .env
-      
