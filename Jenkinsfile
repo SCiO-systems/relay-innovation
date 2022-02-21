@@ -49,7 +49,8 @@ pipeline {
 
                 script {
                     sshagent(credentials: ['jenkins-ssh-key']) {
-                        sh "ssh -p1412 -o StrictHostKeyChecking=no scio@${deployment_instance} mkdir -p /var/lib/${project_name}-${stage_tag}"
+                        sh "ssh -p1412 -o StrictHostKeyChecking=no scio@${deployment_instance} sudo mkdir -p /var/lib/${project_name}-${stage_tag}"
+                        sh "ssh -p1412 -o StrictHostKeyChecking=no scio@${deployment_instance} sudo chown -R scio:scio /var/lib/${project_name}-${stage_tag}"
                         sh "ssh -p1412 -o StrictHostKeyChecking=no scio@${deployment_instance} docker rm -f ${project_name}" // stop container if already running under the defined container name
                         sh "scp -P 1412 -o StrictHostKeyChecking=no docker-compose.${stage_tag}.yml scio@${deployment_instance}:/var/lib/${project_name}-${stage_tag}"
                         sh "ssh -p1412 -o StrictHostKeyChecking=no scio@${deployment_instance} docker-compose -f /var/lib/${project_name}-${stage_tag}/docker-compose.${stage_tag}.yml up -d"
