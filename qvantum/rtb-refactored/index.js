@@ -66,8 +66,8 @@ router.post('/api/melLogin/accessToken', csrfProtection, async (req,res) => {
     const code = req.headers.code
 
     let raw = JSON.stringify({
-        "client_id": 13,
-        "client_secret": "82baadggkkaad81iuyfjhbbdlfc6vc",
+        "client_id": process.env.CLIENT_ID,
+        "client_secret": process.env.CLIENT_SECRET,
         "code": code
     });
 
