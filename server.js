@@ -42,9 +42,9 @@ app.use('/temp',express.static('../temp'))
 
 
 // req.isAuthenticated is provided from the auth router
-app.get('/', (req, res) => {
-    res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
-});
+// app.get('/', (req, res) => {
+//     res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+// });
 
 //test route
 app.get("/",(req,res)=>res.json({success:"HI"}));

@@ -298,14 +298,18 @@ router.post('/api/innovation/insert',csrfProtection, async (req,res) => {
 
 router.post('/api/innovation/edit',csrfProtection, async (req,res) => {
 
+    const form_data = req.headers.form_data
     const id = req.headers.user_id
     const innovation_id = req.headers.innovation_id
     const status = req.headers.status
     const body = {
         user_id: `${id}`,
-        innovation_id: `${innovation_id}`,
+        form_data: JSON.parse(form_data),
+        innov_id: `${innovation_id}`,
         status: status
     }
+
+    console.log(body)
 
     fetch(`${domainUrl}/api/innovation/${innovation_id}/edit`, {
         method: 'PATCH',
@@ -316,7 +320,7 @@ router.post('/api/innovation/edit',csrfProtection, async (req,res) => {
         body: JSON.stringify(body)
     })
         .then(async result => {
-            return res.send(await result.json())
+            console.log(await result.json())
         })
         .catch(err => console.log(err))
 })
@@ -325,21 +329,20 @@ router.post('/api/innovation/delete',csrfProtection, async (req,res) => {
 
     const id = req.headers.user_id
     const innovation_id = req.headers.innovation_id
-    const body = {
-        user_id: `${id}`,
-        innovation_id: `${innovation_id}`,
-    }
+
+    console.log(innovation_id)
 
     fetch(`${domainUrl}/api/innovation/${innovation_id}/delete`, {
         method: 'DELETE',
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
+            user_id: `${id}`,
         },
-        body: JSON.stringify(body)
+
     })
         .then(async result => {
-            return res.send(await result.json())
+            console.log(await result.json())
         })
         .catch(err => console.log(err))
 })
