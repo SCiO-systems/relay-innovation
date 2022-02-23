@@ -9,6 +9,7 @@ dist/
 
 .env
 
+
 # Compiled Java class files
 *.class
 
@@ -17,7 +18,7 @@ dist/
 
 # Log files
 *.log
-
+logs/
 # Package files
 *.jar
 
