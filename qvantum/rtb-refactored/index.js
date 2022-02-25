@@ -17,7 +17,7 @@ const multer = require('multer')
 // import fetch from 'node-fetch';
 // import multer from 'multer'
 
-const domainUrl = process.env.API_URL
+const apiUrl = process.env.API_URL
 
 var csrfProtection = csrf({ cookie: true })
 
@@ -117,10 +117,10 @@ router.post('/api/melLogin/userData' , csrfProtection,async (req,res) => {
 
 router.post('/api/user/getUserData',csrfProtection,(req,res) => {
 
-    const id = req.headers.user_id
+    const id = req.body.user_id
     console.log(id)
 
-    fetch(`${domainUrl}/api/user/${id}/exists`, {
+    fetch(`${apiUrl}/api/user/${id}/exists`, {
         method: 'GET',
         headers: {
             Accept: "application/json",
@@ -130,7 +130,7 @@ router.post('/api/user/getUserData',csrfProtection,(req,res) => {
         .then( async result => {
             const response = await result.json()
             if (response.exists) {
-                await fetch(`${domainUrl}/api/user/${id}/data`, {
+                await fetch(`${apiUrl}/api/user/${id}/data`, {
                     method: 'GET',
                     headers: {
                         Accept: "application/json",
@@ -142,7 +142,7 @@ router.post('/api/user/getUserData',csrfProtection,(req,res) => {
                     })
                     .catch(err => console.log(err))
             } else {
-                await fetch(`${domainUrl}/api/user/${id}/new`, {
+                await fetch(`${apiUrl}/api/user/${id}/new`, {
                     method: 'POST',
                     headers: {
                         Accept: "application/json",
@@ -155,7 +155,7 @@ router.post('/api/user/getUserData',csrfProtection,(req,res) => {
                     .then( async result => {
                         const response = await result.json()
                         if (response.result === 'ok') {
-                            await fetch(`${domainUrl}/api/user/${id}/data`, {
+                            await fetch(`${apiUrl}/api/user/${id}/data`, {
                                 method: 'GET',
                                 headers: {
                                     Accept: "application/json",
@@ -183,14 +183,14 @@ router.post('/api/user/getUserData',csrfProtection,(req,res) => {
 
 router.post('/api/user/update/role',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
-    const role = req.headers.role
+    const id = req.body.user_id
+    const role = req.body.role
     const body = {
         user_id: `${id}`,
         role: `${role}`
     }
 
-    fetch(`${domainUrl}/api/user/${id}/update/role`, {
+    fetch(`${apiUrl}/api/user/${id}/update/role`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -206,10 +206,10 @@ router.post('/api/user/update/role',csrfProtection, async (req,res) => {
 
 router.post('/api/admin/update/permissions',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
+    const id = req.body.user_id
     console.log(id)
-    const targetId = req.headers.targetid
-    const permissions = req.headers.permissions
+    const targetId = req.body.targetid
+    const permissions = req.body.permissions
     console.log(permissions.split(','))
     const body = {
         user_id: `${id}`,
@@ -217,7 +217,7 @@ router.post('/api/admin/update/permissions',csrfProtection, async (req,res) => {
         targetId:targetId
     }
 
-    fetch(`${domainUrl}/api/admin/${id}/update/permissions`, {
+    fetch(`${apiUrl}/api/admin/${id}/update/permissions`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -233,9 +233,9 @@ router.post('/api/admin/update/permissions',csrfProtection, async (req,res) => {
 
 router.post('/api/user/getInnovations',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
+    const id = req.body.user_id
 
-    fetch(`${domainUrl}/api/user/${id}/getInnovations`, {
+    fetch(`${apiUrl}/api/user/${id}/getInnovations`, {
         method: 'GET',
         headers: {
             Accept: "application/json",
@@ -251,12 +251,12 @@ router.post('/api/user/getInnovations',csrfProtection, async (req,res) => {
 
 router.post('/api/user/getAssignedReviews',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
+    const id = req.body.user_id
     const body = {
         user_id: `${id}`,
     }
 
-    fetch(`${domainUrl}/api/user/${id}/getAssignedReviews`, {
+    fetch(`${apiUrl}/api/user/${id}/getAssignedReviews`, {
         method: 'GET',
         headers: {
             Accept: "application/json",
@@ -272,16 +272,16 @@ router.post('/api/user/getAssignedReviews',csrfProtection, async (req,res) => {
 
 router.post('/api/innovation/insert',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
-    let form_data = req.headers.form_data
-    const status = req.headers.status
+    const id = req.body.user_id
+    let form_data = req.body.form_data
+    const status = req.body.status
     const body = {
         user_id: `${id}`,
         form_data: JSON.parse(form_data),
         status: `${status}`
     }
 
-    fetch(`${domainUrl}/api/innovation/insert`, {
+    fetch(`${apiUrl}/api/innovation/insert`, {
         method: 'POST',
         headers: {
             Accept: "application/json",
@@ -298,10 +298,10 @@ router.post('/api/innovation/insert',csrfProtection, async (req,res) => {
 
 router.post('/api/innovation/edit',csrfProtection, async (req,res) => {
 
-    const form_data = req.headers.form_data
-    const id = req.headers.user_id
-    const innovation_id = req.headers.innovation_id
-    const status = req.headers.status
+    const form_data = req.body.form_data
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
+    const status = req.body.status
     const body = {
         user_id: `${id}`,
         form_data: JSON.parse(form_data),
@@ -311,7 +311,7 @@ router.post('/api/innovation/edit',csrfProtection, async (req,res) => {
 
     console.log(body)
 
-    fetch(`${domainUrl}/api/innovation/${innovation_id}/edit`, {
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/edit`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -327,12 +327,12 @@ router.post('/api/innovation/edit',csrfProtection, async (req,res) => {
 
 router.post('/api/innovation/delete',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
-    const innovation_id = req.headers.innovation_id
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
 
     console.log(innovation_id)
 
-    fetch(`${domainUrl}/api/innovation/${innovation_id}/delete`, {
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/delete`, {
         method: 'DELETE',
         headers: {
             Accept: "application/json",
@@ -349,11 +349,11 @@ router.post('/api/innovation/delete',csrfProtection, async (req,res) => {
 
 router.post('/api/innovation/updateVersion',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
-    const innovation_id = req.headers.innovation_id
-    const status = req.headers.status
-    const form_data = req.headers.form_data
-    const version = req.header.version
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
+    const status = req.body.status
+    const form_data = req.body.form_data
+    const version = req.body.version
     const body = {
         user_id: `${id}`,
         innovation_id: `${innovation_id}`,
@@ -362,7 +362,7 @@ router.post('/api/innovation/updateVersion',csrfProtection, async (req,res) => {
         version: version
     }
 
-    fetch(`${domainUrl}/api/innovation/${innovation_id}/updateVersion`, {
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/updateVersion`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -378,14 +378,14 @@ router.post('/api/innovation/updateVersion',csrfProtection, async (req,res) => {
 
 router.post('/api/innovation/publish',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
-    const innovation_id = req.headers.innovation_id
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
     const body = {
         user_id: `${id}`,
         innovation_id: `${innovation_id}`,
     }
 
-    fetch(`${domainUrl}/api/innovation/${innovation_id}/publish`, {
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/publish`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -401,16 +401,16 @@ router.post('/api/innovation/publish',csrfProtection, async (req,res) => {
 
 router.post('/api/innovation/reject',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
-    const innovation_id = req.headers.innovation_id
-    const comments = req.headers.comments
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
+    const comments = req.body.comments
     const body = {
         user_id: `${id}`,
         innovation_id: `${innovation_id}`,
         comments: comments.split(','),
     }
 
-    fetch(`${domainUrl}/api/innovation/${innovation_id}/reject`, {
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/reject`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -426,12 +426,12 @@ router.post('/api/innovation/reject',csrfProtection, async (req,res) => {
 
 router.post('/api/admin/getInnovations',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
+    const id = req.body.user_id
     const body = {
         user_id: `${id}`,
     }
 
-    fetch(`${domainUrl}/api/admin/${id}/getInnovations`, {
+    fetch(`${apiUrl}/api/admin/${id}/getInnovations`, {
         method: 'GET',
         headers: {
             Accept: "application/json",
@@ -448,12 +448,12 @@ router.post('/api/admin/getInnovations',csrfProtection, async (req,res) => {
 
 router.post('/api/admin/getReviewers',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
+    const id = req.body.user_id
     const body = {
         user_id: `${id}`,
     }
 
-    fetch(`${domainUrl}/api/admin/${id}/getReviewers`, {
+    fetch(`${apiUrl}/api/admin/${id}/getReviewers`, {
         method: 'GET',
         headers: {
             Accept: "application/json",
@@ -470,14 +470,14 @@ router.post('/api/admin/getReviewers',csrfProtection, async (req,res) => {
 
 router.post('/api/admin/assignReviewer',csrfProtection, async (req,res) => {
 
-    const id = req.headers.user_id
+    const id = req.body.user_id
     const body = {
         user_id: `${id}`,
         innovation_id: `${innovation_id}`,
         reviewer_ids: reviewer_ids.split(','),
     }
 
-    fetch(`${domainUrl}/api/admin/${id}/assignReviewer`, {
+    fetch(`${apiUrl}/api/admin/${id}/assignReviewer`, {
         method: 'GET',
         headers: {
             Accept: "application/json",
