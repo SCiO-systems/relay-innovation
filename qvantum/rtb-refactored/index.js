@@ -347,6 +347,29 @@ router.post('/api/innovation/delete',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
+router.post('/api/innovation/submit',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
+    const body = {
+        user_id: `${id}`,
+        innov_id: `${innovation_id}`,
+    }
+
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/submit`, {
+        method: 'PATCH',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            console.log(await result)
+        })
+        .catch(err => console.log('hi'))
+})
+
 router.post('/api/innovation/updateVersion',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
