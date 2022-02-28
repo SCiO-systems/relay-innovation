@@ -252,9 +252,6 @@ router.post('/api/user/getInnovations',csrfProtection, async (req,res) => {
 router.post('/api/user/getAssignedReviews',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
-    const body = {
-        user_id: `${id}`,
-    }
 
     fetch(`${apiUrl}/api/user/${id}/getAssignedReviews`, {
         method: 'GET',
@@ -262,7 +259,6 @@ router.post('/api/user/getAssignedReviews',csrfProtection, async (req,res) => {
             Accept: "application/json",
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(body)
     })
         .then(async result => {
             return res.send(await result.json())
@@ -332,14 +328,12 @@ router.post('/api/innovation/delete',csrfProtection, async (req,res) => {
 
     console.log(innovation_id)
 
-    fetch(`${apiUrl}/api/innovation/${innovation_id}/delete`, {
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/delete/${id}`, {
         method: 'DELETE',
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            user_id: `${id}`,
         },
-
     })
         .then(async result => {
             console.log(await result.json())
@@ -450,9 +444,6 @@ router.post('/api/innovation/reject',csrfProtection, async (req,res) => {
 router.post('/api/admin/getInnovations',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
-    const body = {
-        user_id: `${id}`,
-    }
 
     fetch(`${apiUrl}/api/admin/${id}/getInnovations`, {
         method: 'GET',
@@ -460,7 +451,6 @@ router.post('/api/admin/getInnovations',csrfProtection, async (req,res) => {
             Accept: "application/json",
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(body)
     })
         .then(async result => {
             return res.send(await result.json())
@@ -472,9 +462,6 @@ router.post('/api/admin/getInnovations',csrfProtection, async (req,res) => {
 router.post('/api/admin/getReviewers',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
-    const body = {
-        user_id: `${id}`,
-    }
 
     fetch(`${apiUrl}/api/admin/${id}/getReviewers`, {
         method: 'GET',
@@ -482,7 +469,6 @@ router.post('/api/admin/getReviewers',csrfProtection, async (req,res) => {
             Accept: "application/json",
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(body)
     })
         .then(async result => {
             return res.send(await result.json())
@@ -501,7 +487,7 @@ router.post('/api/admin/assignReviewer',csrfProtection, async (req,res) => {
     }
 
     fetch(`${apiUrl}/api/admin/${id}/assignReviewer`, {
-        method: 'GET',
+        method: 'PATCH',
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
