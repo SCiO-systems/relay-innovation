@@ -54,6 +54,7 @@ router.post('/api/upload',upload.single('file') ,function(req, res) {
 });
 
 router.get('/form', csrfProtection, (req, res) => {
+    console.log(req)
     res.send({csrfToken: req.csrfToken() })
 })
 
@@ -63,7 +64,7 @@ router.post('/process', parseForm, csrfProtection, (req, res) => {
 
 router.post('/api/melLogin/accessToken', csrfProtection, async (req,res) => {
 
-    const code = req.headers.code
+    const code = req.body.code
 
     let raw = JSON.stringify({
         "client_id": process.env.CLIENT_ID,
@@ -84,14 +85,16 @@ router.post('/api/melLogin/accessToken', csrfProtection, async (req,res) => {
         })
         .catch(err => console.warn(1))
         .then(result => {
-            return res.send([result.access_token])
+            return res.send(result.access_token)
         })
         .catch(err => console.warn(2))
 })
 
 router.post('/api/melLogin/userData' , csrfProtection,async (req,res) => {
 
-    const accessToken = req.headers.accesstoken
+
+    const accessToken = req.body.accessToken
+    console.log(accessToken)
 
     fetch('https://api.mel.cgiar.org/v3/auth/me', {
         method: 'GET',
@@ -493,6 +496,22 @@ router.post('/api/admin/assignReviewer',csrfProtection, async (req,res) => {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(body)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+
+})
+
+router.post('/api/clarisaResults',csrfProtection, async (req,res) => {
+
+    fetch(`${apiUrl}/api/clarisaResults`, {
+        method: 'GET',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
     })
         .then(async result => {
             return res.send(await result.json())
