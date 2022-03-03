@@ -248,11 +248,11 @@ router.post('/api/user/getInnovations',csrfProtection, async (req,res) => {
 
 })
 
-router.post('/api/user/getAssignedReviews',csrfProtection, async (req,res) => {
+router.post('/api/user/getAssignedInnovations',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
 
-    fetch(`${apiUrl}/api/user/${id}/getAssignedReviews`, {
+    fetch(`${apiUrl}/api/user/${id}/getAssignedInnovations`, {
         method: 'GET',
         headers: {
             Accept: "application/json",
@@ -339,6 +339,27 @@ router.post('/api/innovation/delete',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
+router.post('/api/innovation/deleteRejected',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
+    const timestamp = req.body.timestamp
+
+    console.log(id,innovation_id, timestamp)
+
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/deleteRejected/user/${id}/createdAt/${timestamp}`, {
+        method: 'DELETE',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
 router.post('/api/innovation/submit',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
@@ -374,12 +395,12 @@ router.post('/api/innovation/updateVersion',csrfProtection, async (req,res) => {
         user_id: `${id}`,
         innovation_id: `${innovation_id}`,
         status: `${status}`,
-        form_data: form_data,
+        form_data: JSON.parse(form_data),
         version: version
     }
 
     fetch(`${apiUrl}/api/innovation/${innovation_id}/updateVersion`, {
-        method: 'PATCH',
+        method: 'POST',
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
@@ -423,10 +444,35 @@ router.post('/api/innovation/reject',csrfProtection, async (req,res) => {
     const body = {
         user_id: `${id}`,
         innovation_id: `${innovation_id}`,
-        comments: comments.split(','),
+        comments: `${comments}`,
     }
 
     fetch(`${apiUrl}/api/innovation/${innovation_id}/reject`, {
+        method: 'PATCH',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
+router.post('/api/innovation/addComment',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
+    const comments = req.body.comments
+    const body = {
+        user_id: `${id}`,
+        innovation_id: `${innovation_id}`,
+        comments: `${comments}`,
+    }
+
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/addComment`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -497,10 +543,13 @@ router.post('/api/admin/getReviewers',csrfProtection, async (req,res) => {
 router.post('/api/admin/assignReviewer',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
+    const reviewer_id = req.body.reviewer_id
+    console.log(reviewer_id)
     const body = {
         user_id: `${id}`,
         innovation_id: `${innovation_id}`,
-        reviewer_ids: reviewer_ids.split(','),
+        reviewer_id: `${reviewer_id}`,
     }
 
     fetch(`${apiUrl}/api/admin/${id}/assignReviewer`, {
