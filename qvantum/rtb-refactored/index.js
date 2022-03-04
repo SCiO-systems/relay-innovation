@@ -343,11 +343,9 @@ router.post('/api/innovation/deleteRejected',csrfProtection, async (req,res) => 
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
-    const timestamp = req.body.timestamp
+    const created_at = req.body.created_at
 
-    console.log(id,innovation_id, timestamp)
-
-    fetch(`${apiUrl}/api/innovation/${innovation_id}/deleteRejected/user/${id}/createdAt/${timestamp}`, {
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/deleteRejected/user/${id}/createdAt/${created_at}`, {
         method: 'DELETE',
         headers: {
             Accept: "application/json",
