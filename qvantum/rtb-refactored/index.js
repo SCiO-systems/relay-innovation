@@ -142,15 +142,18 @@ router.post('/api/user/getUserData',csrfProtection,(req,res) => {
                     })
                     .catch(err => console.log(err))
             } else {
+
+                const body = {
+                    user_id: `${id}`,
+                }
+
                 await fetch(`${apiUrl}/api/user/${id}/new`, {
                     method: 'POST',
                     headers: {
                         Accept: "application/json",
                         "Content-Type": "application/json",
                     },
-                    body: {
-                        user_id: `${id}`
-                    }
+                    body: JSON.stringify(body)
                 })
                     .then( async result => {
                         const response = await result.json()
