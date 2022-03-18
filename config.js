@@ -10,5 +10,6 @@ module.exports = {
     HOST : process.env.HOST || 'localhost',
     PORT : process.env.PORT || 5000,
     HTTPS : process.env.HTTPS || false,
-    APP : process.env.APP || "NO APP"
+    APP : process.env.APP || "NO APP",
+    IP: process.env.IP || '0.0.0.0'
 }
