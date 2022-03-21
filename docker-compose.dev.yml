@@ -7,6 +7,6 @@ services:
     ports:
       - 50200:5000
     volumes:
-      - /etc/letsencrypt/live/innovation.dev.relay.scio.services/privkey.pem:/etc/letsencrypt/live/innovation.dev.relay.scio.services/privkey.pem
-      - /etc/letsencrypt/live/innovation.dev.relay.scio.services/cert.pem:/etc/letsencrypt/live/innovation.dev.relay.scio.services/cert.pem
-      - /etc/letsencrypt/live/innovation.dev.relay.scio.services/chain.pem:/etc/letsencrypt/live/innovation.dev.relay.scio.services/chain.pem
+      - /etc/letsencrypt/live/geoc.dev2.relay.scio.services/privkey.pem:/etc/letsencrypt/live/geoc.dev2.relay.scio.services/privkey.pem
+      - /etc/letsencrypt/live/geoc.dev2.relay.scio.services/cert.pem:/etc/letsencrypt/live/geoc.dev2.relay.scio.services/cert.pem
+      - /etc/letsencrypt/live/geoc.dev2.relay.scio.services/chain.pem:/etc/letsencrypt/live/geoc.dev2.relay.scio.services/chain.pem
