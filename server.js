@@ -86,7 +86,7 @@ if(config.HTTPS === false){
     app.listen(config.PORT, config.IP, () => {
         Logger.info(`Server is up and running @ http://${config.IP}:${config.PORT}`);
     })
-}else if(config.HTTPS === true){
+}else if(config.HTTPS === "true"){
     const privateKey = fs.readFileSync(`/etc/letsencrypt/live/${config.HOST}/privkey.pem`, 'utf8');
     const certificate = fs.readFileSync(`/etc/letsencrypt/live/${config.HOST}/cert.pem`, 'utf8');
     const ca = fs.readFileSync(`/etc/letsencrypt/live/${config.HOST}/chain.pem`, 'utf8');
@@ -99,3 +99,4 @@ if(config.HTTPS === false){
                 }, app).listen(config.PORT, config.IP,
         ()=>Logger.info(`Server is up and running @ http://${config.IP}:${config.PORT}`))
 }
+
