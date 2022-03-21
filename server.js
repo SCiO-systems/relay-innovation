@@ -27,6 +27,7 @@ const geospatial = require("./qvantum/geospatial");
 const usermanagement = require("./qvantum/usermanagement");
 const innovation = require("./qvantum/innovation");
 const rtb = require('./qvantum/rtb-refactored')
+const geoc = require('./qvantum/geoc')
 
 const corsOptions = {
     origin: process.env.ALLOWED_ORIGIN,
@@ -62,6 +63,8 @@ app.use("/geospatial",geospatial);
 app.use("/innovation",innovation);
 
 app.use("/rtb-refactored",rtb);
+
+app.use("/geoc",geoc);
 //Project Specific
 app.use("/usermanagement",usermanagement);
 
@@ -79,9 +82,9 @@ Logger.log(
     }
 )
 
-if(config.HTTPS === "false"){
-    app.listen(config.PORT, process.env.IP, () => {
-        Logger.info(`Server is up and running @ http://${process.env.IP}:${config.PORT}`);
+if(config.HTTPS === false){
+    app.listen(config.PORT, config.IP, () => {
+        Logger.info(`Server is up and running @ http://${config.IP}:${config.PORT}`);
     })
 }else if(config.HTTPS === "true"){
     const privateKey = fs.readFileSync(`/etc/letsencrypt/live/${config.HOST}/privkey.pem`, 'utf8');
@@ -93,7 +96,7 @@ if(config.HTTPS === "false"){
             key:privateKey,
             cert:certificate,
             ca:ca
-
-        }, app).listen(config.PORT, process.env.IP,
-        ()=>Logger.info(`Server is up and running @ http://${process.env.IP}:${config.PORT}`))
+                }, app).listen(config.PORT, config.IP,
+        ()=>Logger.info(`Server is up and running @ http://${config.IP}:${config.PORT}`))
 }
+
