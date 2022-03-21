@@ -99,13 +99,3 @@ if(config.HTTPS === false){
                 }, app).listen(config.PORT, config.IP,
         ()=>Logger.info(`Server is up and running @ http://${config.IP}:${config.PORT}`))
 }
-
-
-
-
-
-
-
-
-
-
