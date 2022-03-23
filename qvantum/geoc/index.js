@@ -62,6 +62,7 @@ router.post('/api/melLogin/accessToken', csrfProtection, async (req,res) => {
         "client_id": process.env.CLIENT_ID,
         "client_secret": process.env.CLIENT_SECRET,
         "code": code
+        // "code": "d80a8d4da986bc47de2bc7c376bb0abd"
     });
 
     fetch('https://api.mel.cgiar.org/v3/auth', {
@@ -72,12 +73,9 @@ router.post('/api/melLogin/accessToken', csrfProtection, async (req,res) => {
         },
         body: raw
     })
-        .then(result => {
-            return result.json()
-        })
-        .catch(err => console.warn(1))
-        .then(result => {
-            return res.send(result.access_token)
+        .then(async result => {
+            const response = await result.json()
+            res.send(response.access_token)
         })
         .catch(err => console.warn(2))
 })
@@ -543,6 +541,33 @@ router.post('/api/admin/assignReviewer',csrfProtection, async (req,res) => {
 
 })
 
+router.post('/api/admin/users/dataPaginated',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+    const offset = req.body.offset
+    const limit = req.body.limit
+
+    const body = {
+        user_id: `${id}`,
+        offset: offset,
+        limit: limit,
+    }
+
+    fetch(`${apiUrl}/api/admin/${id}/users/dataPaginated`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+
+})
+
 router.post('/api/resources/autocomplete',csrfProtection, async (req,res) => {
 
     const autocomplete = req.body.autocomplete
@@ -608,6 +633,31 @@ router.post('/api/reviewer/name/autocomplete',csrfProtection, async (req,res) =>
         })
         .catch(err => console.log(err))
 })
+
+router.post('/api/geospatial/polyStats',csrfProtection, async (req,res) => {
+
+    const geometry = req.body.geoJson.geometry
+
+    const body = {
+        target: geometry
+    }
+
+    fetch(`${apiUrl}/api/geospatial/polyStats`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            const temp = await result.json()
+            console.log(temp)
+            return res.send(temp)
+        })
+        .catch(err => console.log(err))
+})
+
 
 module.exports = router
 
