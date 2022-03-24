@@ -42,8 +42,8 @@ router.use('/static',express.static('public'))
 var upload = multer({ storage: storage })
 
 router.post('/api/upload',upload.single('file') ,function(req, res) {
-    console.log(req)
-    res.send('')
+    console.log(req.body)
+    res.send('success')
 });
 
 router.get('/form', csrfProtection, (req, res) => {
