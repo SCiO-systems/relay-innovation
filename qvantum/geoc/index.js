@@ -28,7 +28,7 @@ var storage = multer.diskStorage({
         cb(null, './static')
     },
     filename: function (req, file, cb) {
-        cb(null, file.originalname )
+        cb(null, file.originalname.split('.')[0] + `(${(new Date().getTime())})` + '.' + file.originalname.split('.')[1])
     }
 })
 
@@ -43,7 +43,7 @@ var upload = multer({ storage: storage })
 
 router.post('/api/upload',upload.single('file') ,function(req, res) {
     console.log(req.body)
-    res.send('success')
+    res.send(req.body)
 });
 
 router.get('/form', csrfProtection, (req, res) => {
