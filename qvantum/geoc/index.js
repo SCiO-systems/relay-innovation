@@ -28,7 +28,7 @@ var storage = multer.diskStorage({
         cb(null, './static')
     },
     filename: function (req, file, cb) {
-        cb(null, file.originalname )
+        cb(null, file.originalname.split('.')[0] + `(${(new Date().getTime())})` + '.' + file.originalname.split('.')[1])
     }
 })
 
@@ -43,7 +43,7 @@ var upload = multer({ storage: storage })
 
 router.post('/api/upload',upload.single('file') ,function(req, res) {
     console.log(req.body)
-    res.send('success')
+    res.send(req.body)
 });
 
 router.get('/form', csrfProtection, (req, res) => {
@@ -658,6 +658,77 @@ router.post('/api/geospatial/polyStats',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
+router.post('/api/geospatial/GADMPolygon/point',csrfProtection, async (req,res) => {
+
+    const level = req.body.level
+    const geoJson = req.body.geoJson.features[0]
+
+    console.log(level,geoJson)
+
+    const body = {
+        admin_level: level,
+        resolution: 'low',
+        point: geoJson
+    }
+
+    fetch(`${apiUrl}/api/geospatial/GADMPolygon/point`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            const temp = await result.json()
+            console.log(temp)
+            return res.send(temp)
+        })
+        .catch(err => console.log(err))
+})
+
+router.post('/api/geospatial/representation/data',csrfProtection, async (req,res) => {
+
+    fetch(`${apiUrl}/api/geospatial/representation/data`, {
+        method: 'GET',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+    })
+        .then(async result => {
+            const temp = await result.json()
+            console.log(temp)
+            return res.send(temp)
+        })
+        .catch(err => console.log(err))
+})
+
+router.post('/api/geospatial/applicability',csrfProtection, async (req,res) => {
+
+    const configuration = req.body.configuration
+    const geoJson = req.body.geoJson.features[0]
+
+    const body = {
+        configuration: configuration,
+        point: geoJson
+    }
+
+    fetch(`${apiUrl}/api/geospatial/applicability`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            const temp = await result.json()
+            console.log(temp)
+            return res.send(temp)
+        })
+        .catch(err => console.log(err))
+})
 
 module.exports = router
 

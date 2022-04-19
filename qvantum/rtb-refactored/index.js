@@ -28,7 +28,7 @@ var storage = multer.diskStorage({
         cb(null, './static')
     },
     filename: function (req, file, cb) {
-        cb(null, file.originalname )
+        cb(null, file.originalname.split('.')[0] + `(${(new Date().getTime())})` + '.' + file.originalname.split('.')[1])
     }
 })
 
@@ -50,7 +50,7 @@ var upload = multer({ storage: storage })
 
 router.post('/api/upload',upload.single('file') ,function(req, res) {
     console.log(req.file)
-    res.send('')
+    res.send(req.file)
 });
 
 router.get('/form', csrfProtection, (req, res) => {
@@ -129,8 +129,11 @@ router.post('/api/user/getUserData',csrfProtection,(req,res) => {
     })
         .then( async result => {
             const response = await result.json()
+            const userId = response.data.user_id
+            const data = response.data
+
             if (response.exists) {
-                await fetch(`${apiUrl}/api/user/${id}/data`, {
+                await fetch(`${apiUrl}/api/user/${userId}/data`, {
                     method: 'GET',
                     headers: {
                         Accept: "application/json",
@@ -143,22 +146,18 @@ router.post('/api/user/getUserData',csrfProtection,(req,res) => {
                     .catch(err => console.log(err))
             } else {
 
-                const body = {
-                    user_id: `${id}`,
-                }
-
-                await fetch(`${apiUrl}/api/user/${id}/new`, {
+                await fetch(`${apiUrl}/api/user/${userId}/new`, {
                     method: 'POST',
                     headers: {
                         Accept: "application/json",
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify(body)
+                    body: JSON.stringify(data)
                 })
                     .then( async result => {
                         const response = await result.json()
                         if (response.result === 'ok') {
-                            await fetch(`${apiUrl}/api/user/${id}/data`, {
+                            await fetch(`${apiUrl}/api/user/${userId}/data`, {
                                 method: 'GET',
                                 headers: {
                                     Accept: "application/json",
@@ -184,17 +183,21 @@ router.post('/api/user/getUserData',csrfProtection,(req,res) => {
         })
 })
 
-router.post('/api/user/update/role',csrfProtection, async (req,res) => {
+router.post('/api/user/edit',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
     const role = req.body.role
-    console.log(id,role)
+    const website = req.body.website
+    const organization_logo = req.body.organization_logo
+
     const body = {
         user_id: `${id}`,
-        role: `${role}`
+        role: `${role}`,
+        website:website,
+        organization_logo:organization_logo
     }
 
-    fetch(`${apiUrl}/api/user/${id}/update/role`, {
+    fetch(`${apiUrl}/api/user/${id}/edit`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -251,11 +254,28 @@ router.post('/api/user/getInnovations',csrfProtection, async (req,res) => {
 
 })
 
-router.post('/api/user/getAssignedInnovations',csrfProtection, async (req,res) => {
+router.post('/api/reviewer/getAssignedInnovations',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
 
-    fetch(`${apiUrl}/api/user/${id}/getAssignedInnovations`, {
+    fetch(`${apiUrl}/api/reviewer/${id}/getAssignedInnovations`, {
+        method: 'GET',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
+router.post('/api/sre/getAssignedInnovations',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+
+    fetch(`${apiUrl}/api/sre/${id}/getAssignedInnovations`, {
         method: 'GET',
         headers: {
             Accept: "application/json",
@@ -385,6 +405,30 @@ router.post('/api/innovation/submit',csrfProtection, async (req,res) => {
         .catch(err => console.log('hi'))
 })
 
+router.post('/api/innovation/approve',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
+
+    const body = {
+        user_id: `${id}`,
+        innovation_id: `${innovation_id}`,
+    }
+
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/approve`, {
+        method: 'PATCH',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log('hi'))
+})
+
 router.post('/api/innovation/updateVersion',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
@@ -441,6 +485,29 @@ router.post('/api/innovation/reject',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
+    const body = {
+        user_id: `${id}`,
+        innovation_id: `${innovation_id}`,
+    }
+
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/reject`, {
+        method: 'PATCH',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
+router.post('/api/innovation/revision',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
     const comments = req.body.comments
     const body = {
         user_id: `${id}`,
@@ -448,7 +515,7 @@ router.post('/api/innovation/reject',csrfProtection, async (req,res) => {
         comments: `${comments}`,
     }
 
-    fetch(`${apiUrl}/api/innovation/${innovation_id}/reject`, {
+    fetch(`${apiUrl}/api/innovation/${innovation_id}/revision`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -541,19 +608,21 @@ router.post('/api/admin/getReviewers',csrfProtection, async (req,res) => {
 
 })
 
-router.post('/api/admin/assignReviewer',csrfProtection, async (req,res) => {
+router.post('/api/admin/assignReviewers',csrfProtection, async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
-    const reviewer_id = req.body.reviewer_id
-    console.log(reviewer_id)
+    const reviewer_ids = req.body.reviewer_ids
+
     const body = {
         user_id: `${id}`,
         innovation_id: `${innovation_id}`,
-        reviewer_id: `${reviewer_id}`,
+        reviewer_ids: reviewer_ids,
     }
 
-    fetch(`${apiUrl}/api/admin/${id}/assignReviewer`, {
+    console.log(body)
+
+    fetch(`${apiUrl}/api/admin/${id}/assignReviewers`, {
         method: 'PATCH',
         headers: {
             Accept: "application/json",
@@ -562,7 +631,58 @@ router.post('/api/admin/assignReviewer',csrfProtection, async (req,res) => {
         body: JSON.stringify(body)
     })
         .then(async result => {
+            const response = await result.json()
+            console.log(response)
+            return res.send(response)
+        })
+        .catch(err => console.log(err))
+
+})
+
+router.post('/api/admin/getAllScalingReadinessExperts',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+
+    fetch(`${apiUrl}/api/admin/${id}/getSRE`, {
+        method: 'GET',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+    })
+        .then(async result => {
             return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+
+})
+
+router.post('/api/admin/assignScalingReadinessExpert',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+    const innovation_id = req.body.innovation_id
+    const sre_id = req.body.sre_id
+
+    const body = {
+        user_id: `${id}`,
+        innovation_id: `${innovation_id}`,
+        sre_id: sre_id,
+    }
+
+    console.log(body)
+
+    fetch(`${apiUrl}/api/admin/${id}/assignSRE`, {
+        method: 'PATCH',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            const response = await result.json()
+            console.log(response)
+            return res.send(response)
         })
         .catch(err => console.log(err))
 
@@ -576,6 +696,33 @@ router.post('/api/clarisaResults',csrfProtection, async (req,res) => {
             Accept: "application/json",
             "Content-Type": "application/json",
         },
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+
+})
+
+router.post('/api/admin/users/dataPaginated',csrfProtection, async (req,res) => {
+
+    const id = req.body.user_id
+    const offset = req.body.offset
+    const limit = req.body.limit
+
+    const body = {
+        user_id: `${id}`,
+        offset: offset,
+        limit: limit,
+    }
+
+    fetch(`${apiUrl}/api/admin/${id}/users/dataPaginated`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
     })
         .then(async result => {
             return res.send(await result.json())
