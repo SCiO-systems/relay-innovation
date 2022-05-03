@@ -1,0 +1,3895 @@
+{
+    "techId": "technologies_961",
+    "section_general_information": {
+        "label": "General Information",
+        "tech__1": {
+            "label": "",
+            "tech__0__1": {
+                "label": "",
+                "qg_image": {
+                    "label": "",
+                    "image": {
+                        "label": "",
+                        "value": []
+                    },
+                    "image_caption": {
+                        "label": "",
+                        "value": []
+                    },
+                    "image_comments": {
+                        "label": "",
+                        "value": []
+                    },
+                    "image_date": {
+                        "label": "",
+                        "value": []
+                    },
+                    "image_location": {
+                        "label": "",
+                        "value": []
+                    },
+                    "image_photographer": {
+                        "label": "",
+                        "value": []
+                    },
+                    "image_target": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__1__1": {
+                "label": "",
+                "qg_name": {
+                    "label": "",
+                    "name_autocomplete": [
+                        "Vetiver Hedge Barrier along Seashore and River bank"
+                    ],
+                    "phrase_suggester": [
+                        "Vetiver Hedge Barrier along Seashore and River bank"
+                    ],
+                    "completion_suggester": [
+                        "Vetiver Hedge Barrier along Seashore and River bank"
+                    ],
+                    "term_suggester": [
+                        "Vetiver Hedge Barrier along Seashore and River bank"
+                    ],
+                    "ngram_tokenizer": [
+                        "Vetiver Hedge Barrier along Seashore and River bank"
+                    ],
+                    "name": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Vetiver Hedge Barrier along Seashore and River bank"
+                            }
+                        ]
+                    },
+                    "name_local": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "vetiver hedge barrier in huo garden"
+                            }
+                        ]
+                    }
+                },
+                "qg_location": {
+                    "label": "",
+                    "country": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "China"
+                            }
+                        ]
+                    },
+                    "state_province": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Fujian"
+                            }
+                        ]
+                    },
+                    "further_location": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "location_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "qg_import": {
+                    "label": "",
+                    "import_old_code": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__1__2": {
+                "label": "",
+                "techQg184Updated": {
+                    "label": "",
+                    "personalInfo": [
+                        {
+                            "user_resourceperson_type": "",
+                            "user_resourceperson_other": "",
+                            "user_id": "",
+                            "person_lastname": "",
+                            "person_firstname": "",
+                            "person_gender": "",
+                            "person_institution_name": "",
+                            "person_address": "",
+                            "country": "",
+                            "person_phone_1": "",
+                            "person_phone_2": "",
+                            "person_email_1": "",
+                            "person_email_2": ""
+                        }
+                    ]
+                },
+                "qg_funding_project": {
+                    "funding_project": {
+                        "label": "",
+                        "value": []
+                    },
+                    "label": ""
+                },
+                "qg_funding_institution": {
+                    "funding_institution": {
+                        "label": "",
+                        "value": []
+                    },
+                    "label": ""
+                }
+            },
+            "tech__1__3": {
+                "label": "",
+                "qg_accept_conditions": {
+                    "label": "",
+                    "date_documentation": {
+                        "label": "",
+                        "value": []
+                    },
+                    "accept_conditions": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Yes"
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__1__4": {
+                "label": "",
+                "tech_qg_156": {
+                    "label": "",
+                    "tech_sustainability": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_sustainability_indicate": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__1__5": {
+                "label": "",
+                "value": []
+            },
+            "tech__1__6": {
+                "label": "",
+                "value": []
+            }
+        }
+    },
+    "section_specifications": {
+        "label": "Specifications",
+        "tech__2": {
+            "label": "",
+            "tech__2__1": {
+                "label": "",
+                "tech_qg_1": {
+                    "label": "",
+                    "tech_definition": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Uprightness to the main windward, planting Vetiver hedge as barriers to prevent wind erosion.",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__2__2": {
+                "label": "",
+                "tech_qg_2": {
+                    "label": "",
+                    "tech_description": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "This technology is to use a good SWC vegetable --- Vetiver to form permanent hedge barrier. The barrier is upright to the main windward or along the river & dike bank. It is pruned 1-2 times after 2 months of planting. It can grow at about 1.5 m high within one year. Vetiver is a perennial plant, and has a strong fibrous roots, which can stretch 3 m beneath soils. It breeds by root & cane, and  has strong adaptability. Vetiver is hygrophobe and can endure poor and saline-alkali soil. It is regarded as a saved money & low in labor input but with good benefits. This SWC technology is worth to be applied extensively.",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__2__3": {
+                "label": "",
+                "qg_photos": {
+                    "label": "",
+                    "image": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "/upload/d2/0/d20757c3-f82b-4d2d-809f-ff606b529e1d.jpg",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "/upload/a2/f/a2f64afb-1b62-468c-813c-35770343c757.jpg",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "image_caption": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Vetiver Barrier along river and dike bank",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Vetiver hedge barrier on slope of the highway.",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "image_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "image_date": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "01/01/2002",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "01/01/2002",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "image_photographer": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "YANG Xuezheng (Fuzhou, China)",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Yang Xuezhen (Fuzhou, China)",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "qg_image_remarks": {
+                    "label": "",
+                    "image_remarks": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__2__4": {
+                "label": "",
+                "qg_videos": {
+                    "label": "",
+                    "video_vimeo_id": {
+                        "label": "",
+                        "value": []
+                    },
+                    "video_description": {
+                        "label": "",
+                        "value": []
+                    },
+                    "video_date": {
+                        "label": "",
+                        "value": []
+                    },
+                    "video_location": {
+                        "label": "",
+                        "value": []
+                    },
+                    "video_videographer": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__2__5": {
+                "label": "",
+                "qg_location": {
+                    "label": "",
+                    "country": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "China",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "state_province": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Fujian",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "further_location": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "location_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_3": {
+                    "label": "",
+                    "tech_sites_considered": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "qg_location_map": {
+                    "label": "",
+                    "location_map": {
+                        "label": "",
+                        "value": [
+                            {
+                                "values": [],
+                                "map_url": "/en/wocat/technologies/view/technologies_961/map/",
+                                "all_values": [],
+                                "geo_json": {
+                                    "type": "Point",
+                                    "coordinates": [
+                                        119.611,
+                                        26.671999999999983
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_225": {
+                    "label": "",
+                    "location_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Total area covered by the SLM Technology is 0.5 km2.The SWC area is about 0.5 sqkm.",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__2__6": {
+                "label": "",
+                "tech_qg_160": {
+                    "label": "",
+                    "tech_implementation_year": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_implementation_decades": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Less than 10 years ago (recently)"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__2__7": {
+                "label": "",
+                "tech_qg_5": {
+                    "label": "",
+                    "tech_who_implemented": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Through projects/ external interventions"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_who_implemented_other": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_who_implemented_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "From India.",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "tech__3": {
+            "label": "",
+            "tech__3__1": {
+                "label": "",
+                "tech_qg_6": {
+                    "label": "",
+                    "tech_main_purpose": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Reduce",
+                                        " prevent",
+                                        "Restore land degradation"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_main_purpose_other": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__3__2": {
+                "label": "Current land use type(s) where the Technology is applied",
+                "tech_qg_9": {
+                    "label": "",
+                    "tech_landuse": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_10": {
+                    "label": "",
+                    "tech_lu_cropland_sub": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Annual cropping"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_lu_sub_other": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_lu_cropland_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_11": {
+                    "label": "",
+                    "tech_lu_grazingland_extensive": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_grazingland_intensive": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_sub_other": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_grazingland_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_12": {
+                    "label": "",
+                    "tech_lu_forest_natural": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_forest_plantation": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_sub_other": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_forest_products": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_forest_other": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_13": {
+                    "label": "",
+                    "tech_lu_mixed_sub": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_sub_other": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_mixed_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_14": {
+                    "label": "",
+                    "tech_lu_settlements_sub": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_sub_other": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_settlements_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_15": {
+                    "label": "",
+                    "tech_lu_waterways_sub": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_sub_other": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_waterways_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_16": {
+                    "label": "",
+                    "tech_lu_specify": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_mines_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_17": {
+                    "label": "",
+                    "tech_lu_specify": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_unproductive_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_18": {
+                    "label": "",
+                    "tech_lu_specify": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_lu_other_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_7": {
+                    "label": "",
+                    "tech_lu_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Main crops (cash and food crops):Rice-peanut-sweat potato, vetiver etc. Major land use problems (compiler’s opinion): Serious wind erosion damages crops and cultivated land along the seashore.Major land use problems (land users’ perception): Crops were often damaged and crop yield is decreasing gradually.Type of cropping system and major crops comments: Rice-peanut-sweat potato etc.",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_lu_change": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__3__3": {
+                "label": "",
+                "tech_qg_19": {
+                    "label": "",
+                    "tech_watersupply": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Rainfed"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_watersupply_other": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_watersupply_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Water supply also full irrigation",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_growing_seasons_specify": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_livestock_density": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__3__4": {
+                "label": "",
+                "tech_qg_20": {
+                    "label": "",
+                    "tech_slm_group": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Surface water management (spring",
+                                        " river",
+                                        " lakes",
+                                        "Sea)"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_slm_group_other": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__3__5": {
+                "label": ""
+            },
+            "tech__3__6": {
+                "label": "",
+                "tech_qg_8": {
+                    "label": "",
+                    "tech_measures": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "\"vegetative measures\"",
+                                        "\"assets/img/pictos/swc_3_veg.png\"",
+                                        "null",
+                                        "\"tech_measures_vegetative\""
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_21": {
+                    "label": "",
+                    "tech_measures_agronomic_sub": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_22": {
+                    "label": "",
+                    "tech_measures_vegetative_sub": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "V1: Tree and shrub cover"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_23": {
+                    "label": "",
+                    "tech_measures_structural_sub": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_24": {
+                    "label": "",
+                    "tech_measures_management_sub": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_25": {
+                    "label": "",
+                    "tech_stub": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_26": {
+                    "label": "",
+                    "tech_measures_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__3__7": {
+                "label": "",
+                "tech_qg_27": {
+                    "label": "",
+                    "tech_degradation": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "\"soil erosion by wind\"",
+                                        "\"assets/img/pictos/degra_winderosion.png\"",
+                                        "null",
+                                        "\"degradation_erosion_wind\""
+                                    ],
+                                    [
+                                        "\"chemical soil deterioration\"",
+                                        "\"assets/img/pictos/degra_2_chem.png\"",
+                                        "null",
+                                        "\"degradation_chemical\""
+                                    ],
+                                    [
+                                        "\"water degradation\"",
+                                        "\"assets/img/pictos/degra_waterdegrade.png\"",
+                                        "null",
+                                        "\"degradation_water\""
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_28": {
+                    "label": "",
+                    "degradation_erosion_water_sub": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_29": {
+                    "label": "",
+                    "degradation_erosion_wind_sub": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Et: loss of topsoil"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_30": {
+                    "label": "",
+                    "degradation_chemical_sub": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Cn: fertility decline and reduced organic matter content (not caused by erosion)"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_31": {
+                    "label": "",
+                    "degradation_physical_sub": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_32": {
+                    "label": "",
+                    "degradation_biological_sub": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_33": {
+                    "label": "",
+                    "degradation_water_sub": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Ha: aridification"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_231": {
+                    "label": "",
+                    "tech_stub": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_34": {
+                    "label": "",
+                    "degradation_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Main type of degradation addressed: Et: loss of topsoilSecondary types of degradation addressed: Cn: fertility decline and reduced organic matter content, Ha: aridification",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__3__8": {
+                "label": "",
+                "tech_qg_35": {
+                    "label": "",
+                    "tech_prevention": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_prevention_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            }
+        },
+        "tech__4": {
+            "label": "",
+            "tech__4__1": {
+                "label": "",
+                "tech_qg_185": {
+                    "label": "",
+                    "tech_drawing": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_drawing_author": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_drawing_date": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__4__2": {
+                "label": ""
+            },
+            "tech__4__3": {
+                "label": "",
+                "tech_qg_217": {
+                    "label": "",
+                    "tech_cost_calculation_base": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_163": {
+                    "label": "",
+                    "tech_perarea_size": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_area_unit_conversion": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_162": {
+                    "label": "",
+                    "tech_input_perunit_unit": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_perunit_volume": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_164": {
+                    "label": "",
+                    "tech_input_dollar": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "USD"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_input_national_currency": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_input_exchange_rate": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "8.3",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_input_average_wage": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "3.61",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__4__4": {
+                "label": "",
+                "tech_qg_165": {
+                    "label": "",
+                    "tech_est_activity": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Treating material",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Soil preparation",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Planting",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Water",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_est_type": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_est_timing": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Mid-March",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Early March",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Mid-March",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Planting day",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_166": {
+                    "label": "",
+                    "tech_est_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__4__5": {
+                "label": "",
+                "tech_qg_42": {
+                    "label": "",
+                    "tech_input_est_total_estimation": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_36": {
+                    "label": ""
+                },
+                "tech_qg_37": {
+                    "label": ""
+                },
+                "tech_qg_38": {
+                    "label": ""
+                },
+                "tech_qg_218": {
+                    "label": ""
+                },
+                "tech_qg_39": {
+                    "label": ""
+                },
+                "tech_qg_40": {
+                    "label": ""
+                },
+                "tech_qg_222": {
+                    "label": "",
+                    "tech_input_est_total_costs": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_93": {
+                    "label": "",
+                    "tech_input_est_remaining_costs": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_input_est_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Duration of establishment phase: 24 month(s)",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__4__6": {
+                "label": "",
+                "tech_qg_43": {
+                    "label": "",
+                    "tech_maint_activity": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Pruning",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Pruning",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Applying fertilizer",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_maint_type": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_maint_timing": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Mid-May /",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Early June /",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            },
+                            {
+                                "value": "Later May /",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_44": {
+                    "label": "",
+                    "tech_maint_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__4__7": {
+                "label": "",
+                "tech_qg_50": {
+                    "label": "",
+                    "tech_input_maint_total_estimation": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_45": {
+                    "label": "",
+                    "tech_input_maint_costs": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_total_costs_pi": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_percentage_costs": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_46": {
+                    "label": "",
+                    "tech_input_maint_costs": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_total_costs_pi": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_percentage_costs": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_47": {
+                    "label": "",
+                    "tech_input_maint_costs": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_total_costs_pi": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_percentage_costs": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_219": {
+                    "label": "",
+                    "tech_input_maint_costs": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_total_costs_pi": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_percentage_costs": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_48": {
+                    "label": "",
+                    "tech_input_maint_costs": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_total_costs_pi": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_percentage_costs": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_49": {
+                    "label": "",
+                    "tech_input_maint_costs": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_total_costs_pi": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_input_maint_percentage_costs": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_223": {
+                    "label": "",
+                    "tech_input_maint_total_costs": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_52": {
+                    "label": "",
+                    "tech_input_maint_remaining_costs": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_input_maint_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Areas of vetiver cover.",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__4__8": {
+                "label": "",
+                "tech_qg_95": {
+                    "label": "",
+                    "tech_input_determinate_factors": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "seeds and labor."
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "tech__5": {
+            "label": "",
+            "tech__5__1": {
+                "label": "",
+                "tech_qg_54": {
+                    "label": "",
+                    "tech_rainfall": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "> 4,000 mm",
+                                "values": [
+                                    [
+                                        "1",
+                                        "001-1",
+                                        "500 mm"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": [
+                                    [
+                                        "1",
+                                        "< 250 mm"
+                                    ],
+                                    [
+                                        "1",
+                                        "251-500 mm"
+                                    ],
+                                    [
+                                        "1",
+                                        "501-750 mm"
+                                    ],
+                                    [
+                                        "1",
+                                        "751-1,000 mm"
+                                    ],
+                                    [
+                                        "5",
+                                        "1,001-1,500 mm"
+                                    ],
+                                    [
+                                        "1",
+                                        "1,501-2,000 mm"
+                                    ],
+                                    [
+                                        "1",
+                                        "2,001-3,000 mm"
+                                    ],
+                                    [
+                                        "1",
+                                        "3,001-4,000 mm"
+                                    ],
+                                    [
+                                        "1",
+                                        "> 4,000 mm"
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    "tech_rainfall_annual": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "1182.0",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_rainfall_specifications": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_rainfall_meteostation": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_55": {
+                    "label": "",
+                    "tech_agroclimatic_zone": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Humid"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_agroclimatic_zone_specifications": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__5__2": {
+                "label": "",
+                "tech_qg_56": {
+                    "label": "",
+                    "tech_slopes": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "tech_landforms": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "tech_altitudinalzone": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_57": {
+                    "label": "",
+                    "tech_convex_concave": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "tech_topography_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__5__3": {
+                "label": "",
+                "tech_qg_58": {
+                    "label": "",
+                    "tech_soil_depth": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "tech_soil_texture_topsoil": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "tech_soil_texture_20cm": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "tech_topsoil_organic": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_59": {
+                    "label": "",
+                    "tech_soil_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Soil fertility: very low\r\n\r\nSoil drainage / infiltration: good\r\n\r\nSoil water storage capacity: very low"
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__5__4": {
+                "label": "",
+                "tech_qg_60": {
+                    "label": "",
+                    "tech_groundwater": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_surfacewater": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_waterquality": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_61": {
+                    "label": "",
+                    "tech_salinization": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_62": {
+                    "label": "",
+                    "tech_salinization_specification": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_63": {
+                    "label": "",
+                    "tech_flooding": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_64": {
+                    "label": "",
+                    "tech_flooding_regularity": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_65": {
+                    "label": "",
+                    "tech_water_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__5__5": {
+                "label": "",
+                "tech_qg_66": {
+                    "label": "",
+                    "tech_speciesdiversity": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_habitatdiversity": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_67": {
+                    "label": "",
+                    "tech_biodiversity_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__5__6": {
+                "label": "",
+                "tech_qg_71": {
+                    "label": "",
+                    "tech_sedentary_nomadic": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_market_orientation": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_offfarm_income": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Less than 10% of all income"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_wealth": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Average"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_individuals": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_mechanisation": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Manual work"
+                                    ],
+                                    [
+                                        "Animal traction"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_gender": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_age_landusers": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_77": {
+                    "label": "Characteristics of land users applying the Technology",
+                    "tech_landuser_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "Population density: 200-500 persons/km2Annual population growth: < 0.5%30% of the land users are average wealthy and own 20% of the land.Off-farm income specification: This is an experimental project with small area so that not many persons involved in it.",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__5__7": {
+                "label": "",
+                "tech_qg_72": {
+                    "label": "",
+                    "tech_land_size": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_land_size_relative": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_land_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__5__8": {
+                "label": "",
+                "tech_qg_73": {
+                    "label": "",
+                    "tech_ownership": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Communal/ village"
+                                    ],
+                                    [
+                                        "Individual",
+                                        "Titled"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_ownership_other": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_landuserights": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_landrights_other": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_wateruserights": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_waterrights_other": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_75": {
+                    "label": "",
+                    "tech_ownership_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__5__9": {
+                "label": "",
+                "tech_qg_226": {
+                    "label": "",
+                    "tech_access_health": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_access_education": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_access_techassistance": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_access_employment": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_access_markets": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_access_energy": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_access_roads": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_access_water": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_access_financial": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_227": {
+                    "label": "",
+                    "tech_access_other_specify": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_access_other_measure": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            }
+        },
+        "tech__6": {
+            "label": "",
+            "tech__6__1": {
+                "label": "",
+                "tech__8__1__socioeconomic": {
+                    "label": "",
+                    "tech__8__1__socioeconomic_production": {
+                        "label": "",
+                        "tech_qg_76": {
+                            "label": "",
+                            "tech_impacts_cropproduction": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_78": {
+                            "label": "",
+                            "tech_impacts_cropquality": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_79": {
+                            "label": "",
+                            "tech_impacts_fodderproduction": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_80": {
+                            "label": "",
+                            "tech_impacts_fodderquality": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_81": {
+                            "label": "",
+                            "tech_impacts_animalproduction": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_82": {
+                            "label": "",
+                            "tech_impacts_woodproduction": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_83": {
+                            "label": "",
+                            "tech_impacts_forestquality": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_84": {
+                            "label": "",
+                            "tech_impacts_nonwoodforestproduction": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_85": {
+                            "label": "",
+                            "tech_impacts_productionfailure": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_86": {
+                            "label": "",
+                            "tech_impacts_productdiversity": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_87": {
+                            "label": "",
+                            "tech_impacts_productionarea": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_88": {
+                            "label": "",
+                            "tech_impacts_landmanagement": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_90": {
+                            "label": "",
+                            "tech_impacts_energygeneration": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        }
+                    },
+                    "tech__8__1__socioeconomic_water": {
+                        "label": "",
+                        "tech_qg_91": {
+                            "label": "",
+                            "tech_impacts_drinkingwateravailability": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_97": {
+                            "label": "",
+                            "tech_impacts_drinkingwaterquality": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_98": {
+                            "label": "",
+                            "tech_impacts_livestockwateravailability": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_99": {
+                            "label": "",
+                            "tech_impacts_livestockwaterquality": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_100": {
+                            "label": "",
+                            "tech_impacts_irrigationwateravailability": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_101": {
+                            "label": "",
+                            "tech_impacts_irrigationwaterquality": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_102": {
+                            "label": "",
+                            "tech_impacts_demandirrigationwater": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        }
+                    },
+                    "tech__8__1__socioeconomic_income": {
+                        "label": "",
+                        "tech_qg_103": {
+                            "label": "",
+                            "tech_impacts_expenses": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_104": {
+                            "label": "",
+                            "tech_impacts_farmincome": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_105": {
+                            "label": "",
+                            "tech_impacts_diversityincome": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_106": {
+                            "label": "",
+                            "tech_impacts_economicdisparities": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_107": {
+                            "label": "",
+                            "tech_impacts_workload": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        }
+                    },
+                    "tech__8__1__socioeconomic_other": {
+                        "label": "",
+                        "tech_qg_186": {
+                            "label": ""
+                        }
+                    }
+                },
+                "tech__8__1__ecological": {
+                    "label": "",
+                    "tech__8__1__ecological_water": {
+                        "label": "",
+                        "tech_qg_118": {
+                            "label": ""
+                        },
+                        "tech_qg_119": {
+                            "label": ""
+                        },
+                        "tech_qg_120": {
+                            "label": ""
+                        },
+                        "tech_qg_121": {
+                            "label": "",
+                            "tech_impacts_surfacerunoff": {
+                                "label": "",
+                                "value": [
+                                    {
+                                        "value": "3",
+                                        "values": [],
+                                        "map_url": "",
+                                        "all_values": [
+                                            [
+                                                "1",
+                                                "-3"
+                                            ],
+                                            [
+                                                "1",
+                                                "-2"
+                                            ],
+                                            [
+                                                "1",
+                                                "-1"
+                                            ],
+                                            [
+                                                "1",
+                                                "0"
+                                            ],
+                                            [
+                                                "1",
+                                                "1"
+                                            ],
+                                            [
+                                                "5",
+                                                "2"
+                                            ],
+                                            [
+                                                "1",
+                                                "3"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": [
+                                    {
+                                        "value": "60",
+                                        "values": [],
+                                        "map_url": "",
+                                        "all_values": []
+                                    }
+                                ]
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": [
+                                    {
+                                        "value": "35",
+                                        "values": [],
+                                        "map_url": "",
+                                        "all_values": []
+                                    }
+                                ]
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": [
+                                    {
+                                        "value": "",
+                                        "values": [],
+                                        "map_url": "",
+                                        "all_values": []
+                                    }
+                                ]
+                            }
+                        },
+                        "tech_qg_122": {
+                            "label": ""
+                        },
+                        "tech_qg_123": {
+                            "label": ""
+                        },
+                        "tech_qg_124": {
+                            "label": ""
+                        }
+                    },
+                    "tech__8__1__ecological_soil": {
+                        "label": "",
+                        "tech_qg_125": {
+                            "label": ""
+                        },
+                        "tech_qg_126": {
+                            "label": ""
+                        },
+                        "tech_qg_127": {
+                            "label": "",
+                            "tech_impacts_soilloss": {
+                                "label": "",
+                                "value": [
+                                    {
+                                        "value": "3",
+                                        "values": [],
+                                        "map_url": "",
+                                        "all_values": [
+                                            [
+                                                "1",
+                                                "-3"
+                                            ],
+                                            [
+                                                "1",
+                                                "-2"
+                                            ],
+                                            [
+                                                "1",
+                                                "-1"
+                                            ],
+                                            [
+                                                "1",
+                                                "0"
+                                            ],
+                                            [
+                                                "1",
+                                                "1"
+                                            ],
+                                            [
+                                                "1",
+                                                "2"
+                                            ],
+                                            [
+                                                "5",
+                                                "3"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": [
+                                    {
+                                        "value": "4.5",
+                                        "values": [],
+                                        "map_url": "",
+                                        "all_values": []
+                                    }
+                                ]
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": [
+                                    {
+                                        "value": "2",
+                                        "values": [],
+                                        "map_url": "",
+                                        "all_values": []
+                                    }
+                                ]
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": [
+                                    {
+                                        "value": "",
+                                        "values": [],
+                                        "map_url": "",
+                                        "all_values": []
+                                    }
+                                ]
+                            }
+                        },
+                        "tech_qg_128": {
+                            "label": ""
+                        },
+                        "tech_qg_129": {
+                            "label": ""
+                        },
+                        "tech_qg_130": {
+                            "label": ""
+                        },
+                        "tech_qg_131": {
+                            "label": ""
+                        },
+                        "tech_qg_132": {
+                            "label": "",
+                            "tech_impacts_soilsalinity": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_133": {
+                            "label": ""
+                        },
+                        "tech_qg_134": {
+                            "label": ""
+                        }
+                    },
+                    "tech__8__1__ecological_biodiversity": {
+                        "label": "",
+                        "tech_qg_167": {
+                            "label": ""
+                        },
+                        "tech_qg_140": {
+                            "label": ""
+                        },
+                        "tech_qg_136": {
+                            "label": ""
+                        },
+                        "tech_qg_137": {
+                            "label": ""
+                        },
+                        "tech_qg_135": {
+                            "label": ""
+                        },
+                        "tech_qg_138": {
+                            "label": ""
+                        },
+                        "tech_qg_139": {
+                            "label": "",
+                            "tech_impacts_habitatdiversity": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_before": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_quant_after": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_impacts_specify": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_145": {
+                            "label": ""
+                        }
+                    },
+                    "tech__8__1__ecological_climate": {
+                        "label": "",
+                        "tech_qg_142": {
+                            "label": ""
+                        },
+                        "tech_qg_228": {
+                            "label": ""
+                        },
+                        "tech_qg_220": {
+                            "label": ""
+                        },
+                        "tech_qg_221": {
+                            "label": ""
+                        },
+                        "tech_qg_141": {
+                            "label": ""
+                        },
+                        "tech_qg_143": {
+                            "label": ""
+                        },
+                        "tech_qg_144": {
+                            "label": ""
+                        },
+                        "tech_qg_188": {
+                            "label": ""
+                        }
+                    },
+                    "tech__8__1__ecological_other": {
+                        "label": "",
+                        "tech_qg_189": {
+                            "label": ""
+                        }
+                    }
+                },
+                "tech__8__1__sociocultural": {
+                    "label": "",
+                    "tech_qg_108": {
+                        "label": "",
+                        "tech_impacts_foodsecurity": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_109": {
+                        "label": "",
+                        "tech_impacts_health": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_110": {
+                        "label": "",
+                        "tech_impacts_landuse": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_111": {
+                        "label": "",
+                        "tech_impacts_cultural": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_112": {
+                        "label": "",
+                        "tech_impacts_recreational": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_113": {
+                        "label": "",
+                        "tech_impacts_community": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_114": {
+                        "label": "",
+                        "tech_impacts_national": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_115": {
+                        "label": "",
+                        "tech_impacts_slmknowledge": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_116": {
+                        "label": "",
+                        "tech_impacts_conflictmitigation": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_117": {
+                        "label": "",
+                        "tech_impacts_situationdisadvantaged": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_187": {
+                        "label": "",
+                        "tech_impacts_other_specify": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_other_labelleft": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_other_measure": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_other_labelright": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_before": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_quant_after": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_impacts_specify": {
+                            "label": "",
+                            "value": []
+                        }
+                    }
+                }
+            },
+            "tech__6__2": {
+                "label": "",
+                "tech_qg_146": {
+                    "label": "",
+                    "tech_impacts_wateravailability": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_148": {
+                    "label": "",
+                    "tech_impacts_reliableflows": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_147": {
+                    "label": "",
+                    "tech_impacts_downstreamflooding": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_149": {
+                    "label": "",
+                    "tech_impacts_downstreamsiltation": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_150": {
+                    "label": "",
+                    "tech_impacts_groundwaterpollution": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_151": {
+                    "label": "",
+                    "tech_impacts_bufferingcapacity": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_152": {
+                    "label": "",
+                    "tech_impacts_windtransportedsediments": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_153": {
+                    "label": "",
+                    "tech_impacts_damageneighbourfield": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_154": {
+                    "label": "",
+                    "tech_impacts_damageinfrastructure": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_155": {
+                    "label": "",
+                    "tech_impacts_impactgreenhousegases": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_190": {
+                    "label": "",
+                    "tech_impacts_other_specify": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_other_labelleft": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_other_labelright": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_before": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_impacts_quant_after": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_229": {
+                    "label": "",
+                    "tech_impacts_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__6__3": {
+                "label": "",
+                "tech_83_gradual": {
+                    "label": "",
+                    "tech_qg_168": {
+                        "label": "",
+                        "tech_exposure_incrdecr": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_exposure_sensitivity": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_169": {
+                        "label": "",
+                        "tech_exposure_season": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_exposure_incrdecr": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_exposure_sensitivity": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_170": {
+                        "label": "",
+                        "tech_exposure_incrdecr": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_exposure_sensitivity": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_171": {
+                        "label": "",
+                        "tech_exposure_season": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_exposure_incrdecr": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_exposure_sensitivity": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_172": {
+                        "label": "",
+                        "tech_exposure_other_specify": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_exposure_incrdecr": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_exposure_sensitivity": {
+                            "label": "",
+                            "value": []
+                        }
+                    }
+                },
+                "tech_83_climaterelated": {
+                    "label": "",
+                    "tech__8__3__meteorological": {
+                        "label": "",
+                        "tech_qg_177": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_178": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_179": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_193": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_194": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_195": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_196": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_197": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_198": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        }
+                    },
+                    "tech__8__3__climatological": {
+                        "label": "",
+                        "tech_qg_199": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_200": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_201": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_202": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_203": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_204": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        }
+                    },
+                    "tech__8__3__hydrological": {
+                        "label": "",
+                        "tech_qg_205": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_206": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_207": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_209": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        }
+                    },
+                    "tech__8__3__biological": {
+                        "label": "",
+                        "tech_qg_210": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        },
+                        "tech_qg_211": {
+                            "label": "",
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        }
+                    },
+                    "tech__8__3__otherclimate": {
+                        "label": "",
+                        "tech_qg_212": {
+                            "label": "",
+                            "tech_exposure_other_specify": {
+                                "label": "",
+                                "value": []
+                            },
+                            "tech_exposure_sensitivity": {
+                                "label": "",
+                                "value": []
+                            }
+                        }
+                    }
+                },
+                "tech_83_comments": {
+                    "label": "",
+                    "tech_qg_180": {
+                        "label": "",
+                        "tech_tolerance_comments": {
+                            "label": "",
+                            "value": []
+                        }
+                    }
+                },
+                "tech_83_other": {
+                    "label": "",
+                    "tech_qg_213": {
+                        "label": "",
+                        "tech_exposure_sensitivity": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_214": {
+                        "label": "",
+                        "tech_exposure_sensitivity": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_215": {
+                        "label": "",
+                        "tech_exposure_sensitivity": {
+                            "label": "",
+                            "value": []
+                        }
+                    },
+                    "tech_qg_216": {
+                        "label": "",
+                        "tech_exposure_other_specify": {
+                            "label": "",
+                            "value": []
+                        },
+                        "tech_exposure_sensitivity": {
+                            "label": "",
+                            "value": []
+                        }
+                    }
+                }
+            },
+            "tech__6__4": {
+                "label": "",
+                "tech_qg_181": {
+                    "label": "",
+                    "tech_costbenefit_est_short": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Neutral/ balanced"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_costbenefit_est_long": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Very positive"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_182": {
+                    "label": "",
+                    "tech_costbenefit_est_short": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Positive"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_costbenefit_est_long": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "Very positive"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                },
+                "tech_qg_183": {
+                    "label": "",
+                    "tech_costbenefit_comments": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__6__5": {
+                "label": "",
+                "tech_qg_191": {
+                    "label": "",
+                    "tech_adoption_quantify": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "100 households and 100% of the area",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_adoption_spontaneously": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "",
+                                "values": [
+                                    [
+                                        "51-90%"
+                                    ]
+                                ],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    },
+                    "tech_adoption_comments": {
+                        "label": "",
+                        "value": [
+                            {
+                                "value": "50% of land user families have adopted the Technology with external material support30 land user families have adopted the Technology with external material supportComments on acceptance with external material support: estimates50% of land user families have adopted the Technology without any external material support30 land user families have adopted the Technology without any external material supportComments on spontaneous adoption: estimatesThere is a moderate trend towards spontaneous adoption of the TechnologyComments on adoption trend: Climate here is quite suitable for vetiver growing and it is easy to plant with low input and high output.",
+                                "values": [],
+                                "map_url": "",
+                                "all_values": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "tech__6__6": {
+                "label": "",
+                "tech_qg_230": {
+                    "label": "",
+                    "tech_adaptation_yes": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "tech_qg_192": {
+                    "label": "",
+                    "tech_adaptation_modification": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_adaptation_modification_other": {
+                        "label": "",
+                        "value": []
+                    },
+                    "tech_adaptation_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__6__7": {
+                "label": "",
+                "qg_strengths_landusers": {
+                    "label": "",
+                    "strengths_landuser": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "qg_strengths_compiler": {
+                    "label": "",
+                    "strengths_compiler": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__6__8": {
+                "label": "",
+                "qg_weaknesses_landusers": {
+                    "label": "",
+                    "weaknesses_landuser": {
+                        "label": "",
+                        "value": []
+                    },
+                    "weaknesses_overcome": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "qg_weaknesses_compiler": {
+                    "label": "",
+                    "weaknesses_compiler": {
+                        "label": "",
+                        "value": []
+                    },
+                    "weaknesses_overcome": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            }
+        },
+        "tech__7": {
+            "label": "",
+            "tech__7__1": {
+                "label": "",
+                "qg_sources": {
+                    "label": "",
+                    "sources_used": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "qg_sources_field": {
+                    "label": "",
+                    "sources_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "qg_sources_interviews_landusers": {
+                    "label": "",
+                    "sources_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "qg_sources_interviews_experts": {
+                    "label": "",
+                    "sources_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "qg_sources_compilation": {
+                    "label": "",
+                    "sources_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                },
+                "qg_sources_other": {
+                    "label": "",
+                    "sources_other": {
+                        "label": "",
+                        "value": []
+                    },
+                    "sources_specify": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__7__2": {
+                "label": "",
+                "qg_references": {
+                    "label": "",
+                    "references_title": {
+                        "label": "",
+                        "value": []
+                    },
+                    "references_source": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            },
+            "tech__7__3": {
+                "label": "",
+                "qg_links": {
+                    "label": "",
+                    "links_title": {
+                        "label": "",
+                        "value": []
+                    },
+                    "links_url": {
+                        "label": "",
+                        "value": []
+                    }
+                }
+            }
+        }
+    }
+}
