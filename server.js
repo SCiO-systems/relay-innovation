@@ -50,6 +50,10 @@ app.use('/temp',express.static('../temp'))
 //test route
 app.get("/",(req,res)=>res.json({success:"HI"}));
 
+app.get(`/static/:image`, (req, res) => {
+    res.sendFile(`/static/${req.params.image}`, { root: __dirname })
+})
+
 //Qvantum Autocompete Service
 app.use("/autocomplete",autocomplete);
 //Qvantum WOCAT Service

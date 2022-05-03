@@ -44,7 +44,9 @@ const corsOptions = {
 
 router.use(cookieParser())
 
-router.use('/static',express.static('public'))
+router.use(express.static('public'));
+router.use('/static', express.static('static'));
+// router.use('/static',express.static('public'))
 
 var upload = multer({ storage: storage })
 
@@ -196,6 +198,8 @@ router.post('/api/user/edit',csrfProtection, async (req,res) => {
         website:website,
         organization_logo:organization_logo
     }
+
+    console.log(body)
 
     fetch(`${apiUrl}/api/user/${id}/edit`, {
         method: 'PATCH',
@@ -729,6 +733,28 @@ router.post('/api/admin/users/dataPaginated',csrfProtection, async (req,res) => 
         })
         .catch(err => console.log(err))
 
+})
+
+router.post('/api/user/name/autocomplete',csrfProtection, async (req,res) => {
+
+    const autocomplete = req.body.autocomplete
+
+    const body = {
+        autocomplete:autocomplete
+    }
+
+    fetch(`${apiUrl}/api/user/name/autocomplete`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
 })
 
 router.get('/api/posts/:id', csrfProtection, (req,res) => {
