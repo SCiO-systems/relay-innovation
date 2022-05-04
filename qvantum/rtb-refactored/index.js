@@ -118,6 +118,23 @@ router.post('/api/melLogin/userData' , csrfProtection,async (req,res) => {
         .catch(err => console.warn(4))
 })
 
+router.post('/api/user/getUserDataById' , csrfProtection, (req,res) => {
+
+    const userId = req.body.user_id
+
+    fetch(`${apiUrl}/api/user/${userId}/data`, {
+        method: 'GET',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
 router.post('/api/user/getUserData',csrfProtection,(req,res) => {
 
     const id = req.body.user_id
@@ -744,6 +761,28 @@ router.post('/api/user/name/autocomplete',csrfProtection, async (req,res) => {
     }
 
     fetch(`${apiUrl}/api/user/name/autocomplete`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
+router.post('/api/autocompleteOrganization',csrfProtection, async (req,res) => {
+
+    const autocomplete = req.body.autocomplete
+
+    const body = {
+        autocomplete:autocomplete
+    }
+
+    fetch(`${apiUrl}/api/autocompleteOrganization`, {
         method: 'POST',
         headers: {
             Accept: "application/json",
