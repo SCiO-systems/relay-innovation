@@ -796,6 +796,22 @@ router.post('/api/autocompleteOrganization',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
+
+router.post('/api/allPublishedInnovations',csrfProtection, async (req,res) => {
+
+    fetch(`${apiUrl}/api/allPublishedInnovations`, {
+        method: 'GET',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        }
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
 router.get('/api/posts/:id', csrfProtection, (req,res) => {
     res.send(req.params.id);
 })
