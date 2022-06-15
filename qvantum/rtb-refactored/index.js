@@ -812,6 +812,60 @@ router.post('/api/allPublishedInnovations',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
+router.post('/api/rtb-search',csrfProtection, async (req,res) => {
+
+    const data = req.body
+
+    fetch(`${apiUrl}/api/rtb-search`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
+router.post('/api/rtb-retrieveByTitle',csrfProtection, async (req,res) => {
+
+    const data = req.body
+
+    fetch(`${apiUrl}/api/rtb-retrieveByTitle`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
+router.post('/api/retrievedocument',csrfProtection, async (req,res) => {
+
+    const data = req.body
+
+    fetch(`${apiUrl}/api/retrievedocument`, {
+        method: 'POST',
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then(async result => {
+            return res.send(await result.json())
+        })
+        .catch(err => console.log(err))
+})
+
 router.get('/api/posts/:id', csrfProtection, (req,res) => {
     res.send(req.params.id);
 })
