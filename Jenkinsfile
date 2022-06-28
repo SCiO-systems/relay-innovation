@@ -29,7 +29,7 @@ pipeline {
                         sh "cp /envs/nodejs/${project_name}/${stage_tag}.env ."
 
                         docker.withRegistry('https://index.docker.io/v1/', 'DockerHub') {
-                            docker.build("sciohub/${project_name}:${stage_tag}", "--build-arg NODE_ENV=${stage_tag} .").push()
+                            docker.build("sciohub/${project_name}:${stage_tag}", "--build-arg NODE_ENV=dev .").push()
                         }
                     }
             }
