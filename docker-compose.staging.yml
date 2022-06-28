@@ -10,3 +10,8 @@ services:
       - /etc/letsencrypt/live/staging.innovation.relay.scio.services/privkey.pem:/etc/letsencrypt/live/staging.innovation.relay.scio.services/privkey.pem
       - /etc/letsencrypt/live/staging.innovation.relay.scio.services/cert.pem:/etc/letsencrypt/live/staging.innovation.relay.scio.services/cert.pem
       - /etc/letsencrypt/live/staging.innovation.relay.scio.services/chain.pem:/etc/letsencrypt/live/staging.innovation.relay.scio.services/chain.pem
+    networks:
+      - default
+networks:
+  default:
+    name: app
