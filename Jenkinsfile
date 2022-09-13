@@ -2,7 +2,7 @@ def subject_content = "${env.JOB_NAME} - Build #${env.BUILD_NUMBER}"
 def body_content = '${JELLY_SCRIPT,template="html"}'
 def stage_tag = 'dev'
 def project_name = 'qvantum-relay'
-def deployment_instance = 'innovation.dev.api.scio.services'
+def deployment_instance = 'innovation.dev.relay.scio.services'
 
 
 pipeline {
