@@ -55,15 +55,15 @@ router.post('/api/upload',upload.single('file') ,function(req, res) {
     res.send(req.file)
 });
 
-router.get('/form', csrfProtection, (req, res) => {
+router.get('/form', (req, res) => {
     res.send({csrfToken: req.csrfToken() })
 })
 
-router.post('/process', parseForm, csrfProtection, (req, res) => {
+router.post('/process', parseForm, (req, res) => {
     res.send('data is being processed')
 })
 
-router.post('/api/melLogin/accessToken', csrfProtection, async (req,res) => {
+router.post('/api/melLogin/accessToken', async (req,res) => {
 
     const code = req.body.code
 
@@ -91,7 +91,7 @@ router.post('/api/melLogin/accessToken', csrfProtection, async (req,res) => {
         .catch(err => console.warn(2))
 })
 
-router.post('/api/melLogin/userData' , csrfProtection,async (req,res) => {
+router.post('/api/melLogin/userData',async (req,res) => {
 
 
     const accessToken = req.body.accessToken
@@ -118,7 +118,7 @@ router.post('/api/melLogin/userData' , csrfProtection,async (req,res) => {
         .catch(err => console.warn(4))
 })
 
-router.post('/api/user/getUserDataById' , csrfProtection, (req,res) => {
+router.post('/api/user/getUserDataById', (req,res) => {
 
     const userId = req.body.user_id
 
@@ -135,7 +135,7 @@ router.post('/api/user/getUserDataById' , csrfProtection, (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/user/getUserData',csrfProtection,(req,res) => {
+router.post('/api/user/getUserData',(req,res) => {
 
     const id = req.body.user_id
 
@@ -202,7 +202,7 @@ router.post('/api/user/getUserData',csrfProtection,(req,res) => {
         })
 })
 
-router.post('/api/user/edit',csrfProtection, async (req,res) => {
+router.post('/api/user/edit', async (req,res) => {
 
     const id = req.body.user_id
     const role = req.body.role
@@ -232,7 +232,7 @@ router.post('/api/user/edit',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/admin/update/permissions',csrfProtection, async (req,res) => {
+router.post('/api/admin/update/permissions', async (req,res) => {
 
     const id = req.body.user_id
     const target_id = req.body.target_id
@@ -257,7 +257,7 @@ router.post('/api/admin/update/permissions',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/user/getInnovations',csrfProtection, async (req,res) => {
+router.post('/api/user/getInnovations', async (req,res) => {
 
     const id = req.body.user_id
 
@@ -275,7 +275,7 @@ router.post('/api/user/getInnovations',csrfProtection, async (req,res) => {
 
 })
 
-router.post('/api/reviewer/getAssignedInnovations',csrfProtection, async (req,res) => {
+router.post('/api/reviewer/getAssignedInnovations', async (req,res) => {
 
     const id = req.body.user_id
 
@@ -292,7 +292,7 @@ router.post('/api/reviewer/getAssignedInnovations',csrfProtection, async (req,re
         .catch(err => console.log(err))
 })
 
-router.post('/api/sre/getAssignedInnovations',csrfProtection, async (req,res) => {
+router.post('/api/sre/getAssignedInnovations', async (req,res) => {
 
     const id = req.body.user_id
 
@@ -309,7 +309,7 @@ router.post('/api/sre/getAssignedInnovations',csrfProtection, async (req,res) =>
         .catch(err => console.log(err))
 })
 
-router.post('/api/innovation/insert',csrfProtection, async (req,res) => {
+router.post('/api/innovation/insert', async (req,res) => {
 
     const id = req.body.user_id
     let form_data = req.body.form_data
@@ -334,7 +334,7 @@ router.post('/api/innovation/insert',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/innovation/edit',csrfProtection, async (req,res) => {
+router.post('/api/innovation/edit', async (req,res) => {
 
     const form_data = req.body.form_data
     const id = req.body.user_id
@@ -363,7 +363,7 @@ router.post('/api/innovation/edit',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/innovation/delete',csrfProtection, async (req,res) => {
+router.post('/api/innovation/delete', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -383,7 +383,7 @@ router.post('/api/innovation/delete',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/innovation/deleteRejected',csrfProtection, async (req,res) => {
+router.post('/api/innovation/deleteRejected', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -402,7 +402,7 @@ router.post('/api/innovation/deleteRejected',csrfProtection, async (req,res) => 
         .catch(err => console.log(err))
 })
 
-router.post('/api/innovation/submit',csrfProtection, async (req,res) => {
+router.post('/api/innovation/submit', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -426,7 +426,7 @@ router.post('/api/innovation/submit',csrfProtection, async (req,res) => {
         .catch(err => console.log('hi'))
 })
 
-router.post('/api/innovation/approve',csrfProtection, async (req,res) => {
+router.post('/api/innovation/approve', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -450,7 +450,7 @@ router.post('/api/innovation/approve',csrfProtection, async (req,res) => {
         .catch(err => console.log('hi'))
 })
 
-router.post('/api/innovation/updateVersion',csrfProtection, async (req,res) => {
+router.post('/api/innovation/updateVersion', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -479,7 +479,7 @@ router.post('/api/innovation/updateVersion',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/innovation/publish',csrfProtection, async (req,res) => {
+router.post('/api/innovation/publish', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -502,7 +502,7 @@ router.post('/api/innovation/publish',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/innovation/reject',csrfProtection, async (req,res) => {
+router.post('/api/innovation/reject', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -525,7 +525,7 @@ router.post('/api/innovation/reject',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/innovation/revision',csrfProtection, async (req,res) => {
+router.post('/api/innovation/revision', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -550,7 +550,7 @@ router.post('/api/innovation/revision',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/innovation/addComment',csrfProtection, async (req,res) => {
+router.post('/api/innovation/addComment', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -575,7 +575,7 @@ router.post('/api/innovation/addComment',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/admin/getAllUsers',csrfProtection, async (req,res) => {
+router.post('/api/admin/getAllUsers', async (req,res) => {
 
     const id = req.body.user_id
 
@@ -593,7 +593,7 @@ router.post('/api/admin/getAllUsers',csrfProtection, async (req,res) => {
 
 })
 
-router.post('/api/admin/getInnovations',csrfProtection, async (req,res) => {
+router.post('/api/admin/getInnovations', async (req,res) => {
 
     const id = req.body.user_id
 
@@ -611,7 +611,7 @@ router.post('/api/admin/getInnovations',csrfProtection, async (req,res) => {
 
 })
 
-router.post('/api/admin/getReviewers',csrfProtection, async (req,res) => {
+router.post('/api/admin/getReviewers', async (req,res) => {
 
     const id = req.body.user_id
 
@@ -629,7 +629,7 @@ router.post('/api/admin/getReviewers',csrfProtection, async (req,res) => {
 
 })
 
-router.post('/api/admin/assignReviewers',csrfProtection, async (req,res) => {
+router.post('/api/admin/assignReviewers', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -660,7 +660,7 @@ router.post('/api/admin/assignReviewers',csrfProtection, async (req,res) => {
 
 })
 
-router.post('/api/admin/getAllScalingReadinessExperts',csrfProtection, async (req,res) => {
+router.post('/api/admin/getAllScalingReadinessExperts', async (req,res) => {
 
     const id = req.body.user_id
 
@@ -678,7 +678,7 @@ router.post('/api/admin/getAllScalingReadinessExperts',csrfProtection, async (re
 
 })
 
-router.post('/api/admin/assignScalingReadinessExpert',csrfProtection, async (req,res) => {
+router.post('/api/admin/assignScalingReadinessExpert', async (req,res) => {
 
     const id = req.body.user_id
     const innovation_id = req.body.innovation_id
@@ -709,7 +709,7 @@ router.post('/api/admin/assignScalingReadinessExpert',csrfProtection, async (req
 
 })
 
-router.post('/api/clarisaResults',csrfProtection, async (req,res) => {
+router.post('/api/clarisaResults', async (req,res) => {
 
     fetch(`${apiUrl}/api/clarisaResults`, {
         method: 'GET',
@@ -725,7 +725,7 @@ router.post('/api/clarisaResults',csrfProtection, async (req,res) => {
 
 })
 
-router.post('/api/admin/users/dataPaginated',csrfProtection, async (req,res) => {
+router.post('/api/admin/users/dataPaginated', async (req,res) => {
 
     const id = req.body.user_id
     const offset = req.body.offset
@@ -752,7 +752,7 @@ router.post('/api/admin/users/dataPaginated',csrfProtection, async (req,res) => 
 
 })
 
-router.post('/api/user/name/autocomplete',csrfProtection, async (req,res) => {
+router.post('/api/user/name/autocomplete', async (req,res) => {
 
     const autocomplete = req.body.autocomplete
 
@@ -774,7 +774,7 @@ router.post('/api/user/name/autocomplete',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/autocompleteOrganization',csrfProtection, async (req,res) => {
+router.post('/api/autocompleteOrganization', async (req,res) => {
 
     const autocomplete = req.body.autocomplete
 
@@ -797,7 +797,7 @@ router.post('/api/autocompleteOrganization',csrfProtection, async (req,res) => {
 })
 
 
-router.post('/api/allPublishedInnovations',csrfProtection, async (req,res) => {
+router.post('/api/allPublishedInnovations', async (req,res) => {
 
     fetch(`${apiUrl}/api/allPublishedInnovations`, {
         method: 'GET',
@@ -812,7 +812,7 @@ router.post('/api/allPublishedInnovations',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/rtb-search',csrfProtection, async (req,res) => {
+router.post('/api/rtb-search', async (req,res) => {
 
     const data = req.body
 
@@ -830,7 +830,7 @@ router.post('/api/rtb-search',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/rtb-retrieveByTitle',csrfProtection, async (req,res) => {
+router.post('/api/rtb-retrieveByTitle', async (req,res) => {
 
     const data = req.body
 
@@ -848,7 +848,7 @@ router.post('/api/rtb-retrieveByTitle',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.post('/api/retrievedocument',csrfProtection, async (req,res) => {
+router.post('/api/retrievedocument', async (req,res) => {
 
     const data = req.body
 
@@ -866,7 +866,7 @@ router.post('/api/retrievedocument',csrfProtection, async (req,res) => {
         .catch(err => console.log(err))
 })
 
-router.get('/api/posts/:id', csrfProtection, (req,res) => {
+router.get('/api/posts/:id', (req,res) => {
     res.send(req.params.id);
 })
 
