@@ -1,15 +1,15 @@
 version: '3.8'
 services:
   qvantum-relay:
-    image: sciohub/innovation-relay:staging
+    image: sciohub/innovation-relay:prod
     container_name: innovation-relay
     restart: unless-stopped
     ports:
       - 50200:5000
     volumes:
-      - /etc/letsencrypt/live/staging.innovation.relay.scio.services/privkey.pem:/etc/letsencrypt/live/staging.innovation.relay.scio.services/privkey.pem
-      - /etc/letsencrypt/live/staging.innovation.relay.scio.services/cert.pem:/etc/letsencrypt/live/staging.innovation.relay.scio.services/cert.pem
-      - /etc/letsencrypt/live/staging.innovation.relay.scio.services/chain.pem:/etc/letsencrypt/live/staging.innovation.relay.scio.services/chain.pem
+      - /etc/letsencrypt/live/innovation.relay.scio.services/privkey.pem:/etc/letsencrypt/live/innovation.relay.scio.services/privkey.pem
+      - /etc/letsencrypt/live/innovation.relay.scio.services/cert.pem:/etc/letsencrypt/live/innovation.relay.scio.services/cert.pem
+      - /etc/letsencrypt/live/innovation.relay.scio.services/chain.pem:/etc/letsencrypt/live/innovation.relay.scio.services/chain.pem
     networks:
       - default
 networks:
