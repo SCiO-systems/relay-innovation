@@ -39,13 +39,9 @@ app.get(`/static/:image`, (req, res) => {
     res.sendFile(`/static/${req.params.image}`, { root: __dirname })
 })
 
-//Qvantum Innovation Service
-app.use("/innovation",innovation);
 
 app.use("/rtb-refactored",rtb);
 
-//Project Specific
-app.use("/usermanagement",usermanagement);
 
 Logger.log(
     {
