@@ -8,26 +8,11 @@ const https = require('https');
 const auth = require('express-openid-connect');
 require('dotenv/config')
 
-/*const config = {
-    authRequired: false,
-    auth0Logout: true,
-    secret: 'a long, randomly-generated string stored in env',
-    baseURL: 'http://localhost:5000',
-    clientID: 'nXlcyLnNGfqGoylG6WwJE9GrMRKRdtaI',
-    issuerBaseURL: 'https://sciosystems.eu.auth0.com'
-};*/
-
-
 const app = express();
 
-const autocomplete = require("./qvantum/autocomplete");
-const wocat = require("./qvantum/wocat");
-const gardian = require("./qvantum/gardian");
-const geospatial = require("./qvantum/geospatial");
 const usermanagement = require("./qvantum/usermanagement");
 const innovation = require("./qvantum/innovation");
 const rtb = require('./qvantum/rtb-refactored')
-const geoc = require('./qvantum/geoc')
 
 const corsOptions = {
     origin: process.env.ALLOWED_ORIGIN,
@@ -54,21 +39,11 @@ app.get(`/static/:image`, (req, res) => {
     res.sendFile(`/static/${req.params.image}`, { root: __dirname })
 })
 
-//Qvantum Autocompete Service
-app.use("/autocomplete",autocomplete);
-//Qvantum WOCAT Service
-app.use("/wocat",wocat);
-//Qvantum GARDIAN Service
-app.use("/gardian",gardian);
-//Qvantum Geospatial Service
-app.use("/geospatial",geospatial);
-//app.use("/upload",upload);
 //Qvantum Innovation Service
 app.use("/innovation",innovation);
 
 app.use("/rtb-refactored",rtb);
 
-app.use("/geoc",geoc);
 //Project Specific
 app.use("/usermanagement",usermanagement);
 
